@@ -9,7 +9,7 @@
 
 (load "~/.emacs.d/general-config") ; general configuration lisp file
 
-(add-to-list 'load-path "~/.emacs.d/lisp") ; packages configurations file
+(add-to-list 'load-path "~/.emacs.d/lisp") ; packages configuration file
 
 ;;--------------------------------------------------------------------------
 (custom-set-variables
