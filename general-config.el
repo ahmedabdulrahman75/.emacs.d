@@ -15,3 +15,7 @@
 
 ;; don't accelerate scrolling
 (setq mouse-wheel-progressive-speed nil)
+
+
+;; Delete selection mode
+(delete-selection-mode 1)
