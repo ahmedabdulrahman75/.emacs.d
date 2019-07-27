@@ -14,4 +14,4 @@
     (if (> tab-count space-count) (setq indent-tabs-mode t))))
 
 ;; don't accelerate scrolling
-(setq mouse-wheel-progressive-speed nil) 
+(setq mouse-wheel-progressive-speed nil)
