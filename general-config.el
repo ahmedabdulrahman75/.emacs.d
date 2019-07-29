@@ -19,3 +19,6 @@
 
 ;; Delete selection mode
 (delete-selection-mode 1)
+
+
+
