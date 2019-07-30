@@ -19,3 +19,7 @@
 
 ;; Delete selection mode
 (delete-selection-mode 1)
+
+;; enable spell check by default
+(add-hook 'text-mode-hook 'flyspell-mode)
+(add-hook 'prog-mode-hook 'flyspell-prog-mode)
