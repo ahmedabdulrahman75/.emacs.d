@@ -1,3 +1,4 @@
+(package-install 'color-theme-sanityinc-tomorrow)
 (package-install 'which-key)
 (package-install 'company)
 (package-install 'autopair)
