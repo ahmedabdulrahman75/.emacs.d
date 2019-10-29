@@ -14,3 +14,10 @@
 
 ;; autopair
 (autopair-global-mode)
+
+;; treemacs
+(global-set-key [f8] 'treemacs)
+
+;; switch window
+(global-set-key (kbd "C-x o") 'switch-window)
+(setq switch-window-shortcut-style 'qwerty) ;;using (a-z) instead of (1-9)
