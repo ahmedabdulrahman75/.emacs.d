@@ -5,3 +5,5 @@
 (package-install 'markdown-mode)
 (package-install 'treemacs)
 (package-install 'switch-window)
+(package-install 'js2-mode)
+(package-install 'rjsx-mode)
