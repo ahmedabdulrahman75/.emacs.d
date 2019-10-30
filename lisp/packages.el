@@ -7,3 +7,4 @@
 (package-install 'switch-window)
 (package-install 'js2-mode)
 (package-install 'rjsx-mode)
+(package-install 'php-mode)

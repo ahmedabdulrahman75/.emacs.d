@@ -32,7 +32,7 @@
  '(fci-rule-color "#003f8e")
  '(package-selected-packages
    (quote
-    (js2-mode rjsx-mode switch-window treemacs markdown-mode company-quickhelp autopair company which-key color-theme-sanityinc-tomorrow)))
+    (php-mode js2-mode rjsx-mode switch-window treemacs markdown-mode company-quickhelp autopair company which-key color-theme-sanityinc-tomorrow)))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote
