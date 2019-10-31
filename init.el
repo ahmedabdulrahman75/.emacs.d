@@ -14,6 +14,7 @@
 (load "packages")
 (load "global")
 (load "javascript-lisp")
+(load "web-lisp")
 ;;--------------------------------------------------------------------------
 
 (custom-set-variables
@@ -32,7 +33,7 @@
  '(fci-rule-color "#003f8e")
  '(package-selected-packages
    (quote
-    (php-mode js2-mode rjsx-mode switch-window treemacs markdown-mode company-quickhelp autopair company which-key color-theme-sanityinc-tomorrow)))
+    (emmet-mode php-mode js2-mode rjsx-mode switch-window treemacs markdown-mode company-quickhelp autopair company which-key color-theme-sanityinc-tomorrow)))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote

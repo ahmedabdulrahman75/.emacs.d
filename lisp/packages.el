@@ -8,3 +8,4 @@
 (package-install 'js2-mode)
 (package-install 'rjsx-mode)
 (package-install 'php-mode)
+(package-install 'emmet-mode)
