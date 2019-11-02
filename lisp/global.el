@@ -21,3 +21,11 @@
 ;; switch window
 (global-set-key (kbd "C-x o") 'switch-window)
 (setq switch-window-shortcut-style 'qwerty) ;;using (a-z) instead of (1-9)
+
+;; yasnippet
+(yas-global-mode 1)
+
+;; helm mode
+(global-set-key (kbd "M-x") #'helm-M-x)
+(global-set-key (kbd "C-x r b") #'helm-filtered-bookmarks)
+(global-set-key (kbd "C-x C-f") #'helm-find-files)

@@ -33,7 +33,7 @@
  '(fci-rule-color "#003f8e")
  '(package-selected-packages
    (quote
-    (emmet-mode php-mode js2-mode rjsx-mode switch-window treemacs markdown-mode company-quickhelp autopair company which-key color-theme-sanityinc-tomorrow)))
+    (web-mode company-web helm react-snippets yasnippet-snippets tabbar company-tern yasnippet emmet-mode php-mode js2-mode rjsx-mode switch-window treemacs markdown-mode company-quickhelp autopair company which-key color-theme-sanityinc-tomorrow)))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote
