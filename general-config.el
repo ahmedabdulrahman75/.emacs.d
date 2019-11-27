@@ -24,3 +24,9 @@
 (add-hook 'text-mode-hook 'flyspell-mode)
 (add-hook 'prog-mode-hook 'flyspell-prog-mode)
 (global-set-key (kbd "<mouse-3>") 'flyspell-correct-word)
+
+;; auto refresh all buffers
+(global-auto-revert-mode t)
+
+;; line number in all buffers
+(global-linum-mode t)

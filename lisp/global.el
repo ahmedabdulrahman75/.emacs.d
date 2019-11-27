@@ -31,4 +31,4 @@
 (global-set-key (kbd "C-x C-f") #'helm-find-files)
 
 ;; idle highlight mode
-(add-hook 'prog-mode-hook (lambda () (idle-highlight-mode t)))
+;; (add-hook 'prog-mode-hook (lambda () (idle-highlight-mode t)))
