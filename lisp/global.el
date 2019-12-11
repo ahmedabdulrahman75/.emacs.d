@@ -32,3 +32,7 @@
 
 ;; idle highlight mode
 ;; (add-hook 'prog-mode-hook (lambda () (idle-highlight-mode t)))
+
+;; tabbar mode
+(global-set-key (kbd "<C-right>")  'tabbar-forward)
+(global-set-key (kbd "<C-left>")  'tabbar-backward)
