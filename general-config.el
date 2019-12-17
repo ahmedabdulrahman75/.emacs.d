@@ -30,3 +30,6 @@
 
 ;; line number in all buffers
 (global-linum-mode t)
+
+;;show parenthesis matched
+(show-paren-mode t)
