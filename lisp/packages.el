@@ -17,3 +17,4 @@
 (package-install 'web-mode)
 (package-install 'company-web)
 (package-install 'idle-highlight-mode)
+(package-install 'drag-stuff)

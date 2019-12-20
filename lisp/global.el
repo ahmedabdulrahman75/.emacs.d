@@ -36,3 +36,7 @@
 ;; tabbar mode
 (global-set-key (kbd "<C-right>")  'tabbar-forward)
 (global-set-key (kbd "<C-left>")  'tabbar-backward)
+
+;; Drag Stuff
+(drag-stuff-global-mode 1)
+(drag-stuff-define-keys)
