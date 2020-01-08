@@ -18,3 +18,4 @@
 (package-install 'company-web)
 (package-install 'idle-highlight-mode)
 (package-install 'drag-stuff)
+(package-install 'org)
