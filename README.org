@@ -1,0 +1,11 @@
+* packages required
+  
+#+BEGIN_SRC shell
+sudo apt install markdown  
+#+END_SRC
+
+* npm packages required
+
+#+BEGIN_SRC shell
+sudo npm -g install tern
+#+END_SRC
