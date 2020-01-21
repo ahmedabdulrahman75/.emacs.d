@@ -29,7 +29,7 @@
     ("8e7044bfad5a2e70dfc4671337a4f772ee1b41c5677b8318f17f046faa42b16b" default)))
  '(package-selected-packages
    (quote
-    (org js2-mode company yasnippet yasnippet-snippets which-key web-mode treemacs tabbar switch-window rjsx-mode react-snippets php-mode markdown-mode idle-highlight-mode helm emmet-mode drag-stuff company-web company-quickhelp autopair))))
+    (company-tern org js2-mode company yasnippet yasnippet-snippets which-key web-mode treemacs tabbar switch-window rjsx-mode react-snippets php-mode markdown-mode idle-highlight-mode helm emmet-mode drag-stuff company-web company-quickhelp autopair))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
