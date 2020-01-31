@@ -17,3 +17,19 @@
 (load "javascript-lisp")
 (load "web-lisp")
 ;;--------------------------------------------------------------------------
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (adwaita)))
+ '(package-selected-packages
+   (quote
+    (org js2-mode company yasnippet yasnippet-snippets which-key web-mode treemacs tabbar switch-window rjsx-mode react-snippets php-mode markdown-mode idle-highlight-mode helm emmet-mode drag-stuff company-web company-tern company-quickhelp autopair)))
+ '(show-paren-mode t))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:family "DejaVu Sans Mono" :foundry "PfEd" :slant normal :weight normal :height 105 :width normal)))))
