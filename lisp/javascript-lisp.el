@@ -10,3 +10,6 @@
 (add-hook 'js2-mode-hook (lambda ()
                            (tern-mode)
                            (company-mode)))
+
+;; json-mode
+(add-to-list 'auto-mode-alist '("\\.json\\'" . json-mode))

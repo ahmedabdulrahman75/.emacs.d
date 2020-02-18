@@ -20,3 +20,4 @@
 (package-install 'drag-stuff)
 (package-install 'org)
 (package-install 'company-tern)
+(package-install 'json-mode)
