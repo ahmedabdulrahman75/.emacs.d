@@ -30,7 +30,7 @@
     ("8e7044bfad5a2e70dfc4671337a4f772ee1b41c5677b8318f17f046faa42b16b" default)))
  '(package-selected-packages
    (quote
-    (hungry-delete flyspell-correct-helm json-mode org js2-mode company yasnippet yasnippet-snippets which-key web-mode treemacs tabbar switch-window rjsx-mode react-snippets php-mode markdown-mode idle-highlight-mode helm emmet-mode drag-stuff company-web company-tern company-quickhelp autopair)))
+    (tabbar-ruler hungry-delete flyspell-correct-helm json-mode org js2-mode company yasnippet yasnippet-snippets which-key web-mode treemacs switch-window rjsx-mode react-snippets php-mode markdown-mode idle-highlight-mode helm emmet-mode drag-stuff company-web company-tern company-quickhelp autopair)))
  '(show-paren-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

@@ -23,3 +23,4 @@
 (package-install 'json-mode)
 (package-install 'flyspell-correct-helm)
 (package-install 'hungry-delete)
+(package-install 'tabbar-ruler)
