@@ -21,3 +21,5 @@
 (package-install 'org)
 (package-install 'company-tern)
 (package-install 'json-mode)
+(package-install 'flyspell-correct-helm)
+(package-install 'hungry-delete)

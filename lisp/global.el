@@ -33,10 +33,17 @@
 ;; idle highlight mode
 ;; (add-hook 'prog-mode-hook (lambda () (idle-highlight-mode t)))
 
-;; tabbar mode
+;; tabbar-mode
 (global-set-key (kbd "<C-right>")  'tabbar-forward)
 (global-set-key (kbd "<C-left>")  'tabbar-backward)
 
 ;; Drag Stuff
 (drag-stuff-global-mode 1)
 (drag-stuff-define-keys)
+
+;; flyspell correct helm
+(require 'flyspell-correct-helm)
+(define-key flyspell-mode-map (kbd "C-;") 'flyspell-correct-wrapper)
+
+;; hungry delete
+(global-hungry-delete-mode)
