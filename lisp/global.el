@@ -57,3 +57,6 @@
 ;; See http://www.gnu.org/software/emacs/manual/html_node/emacs/Hooks.html
 ;; for what this line means
 (add-hook 'after-change-major-mode-hook 'autocomplete-show-snippets)
+
+;; tabbar-ruler
+(tabbar-ruler-move)
