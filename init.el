@@ -10,7 +10,6 @@
 ;;--------------------------------------------------------------------------
 ;; loading files
 ;;--------------------------------------------------------------------------
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (load "~/.emacs.d/general-config") ; general configuration lisp file
 (add-to-list 'load-path "~/.emacs.d/lisp") ; packages configuration file
 (load "packages")
@@ -24,13 +23,13 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (adwaita)))
  '(package-selected-packages
    (quote
-    (org helm tabbar js2-mode company yasnippet yasnippet-snippets which-key web-mode treemacs tabbar-ruler switch-window rjsx-mode react-snippets php-mode markdown-mode json-mode idle-highlight-mode hungry-delete flyspell-correct-helm emmet-mode drag-stuff company-web company-tern company-quickhelp autopair)))
- '(show-paren-mode t))
+    (org helm tabbar js2-mode company yasnippet yasnippet-snippets which-key web-mode treemacs tabbar-ruler switch-window rjsx-mode react-snippets php-mode markdown-mode json-mode idle-highlight-mode hungry-delete flyspell-correct-helm emmet-mode drag-stuff company-web company-tern company-quickhelp autopair))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "DejaVu Sans Mono" :foundry "PfEd" :slant normal :weight normal :height 105 :width normal)))))
+ )
