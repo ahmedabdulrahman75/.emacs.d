@@ -29,6 +29,7 @@
 
 ;; line number in all buffers
 (global-linum-mode t)
+(add-hook 'doc-view-mode-hook (lambda() (linum-mode 0)))
 
 ;;show parenthesis matched
 (show-paren-mode t)

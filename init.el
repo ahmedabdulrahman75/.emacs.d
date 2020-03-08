@@ -24,6 +24,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (adwaita)))
+ '(doc-view-continuous t)
  '(package-selected-packages
    (quote
     (org helm tabbar js2-mode company yasnippet yasnippet-snippets which-key web-mode treemacs tabbar-ruler switch-window rjsx-mode react-snippets php-mode markdown-mode json-mode idle-highlight-mode hungry-delete flyspell-correct-helm emmet-mode drag-stuff company-web company-tern company-quickhelp autopair))))
