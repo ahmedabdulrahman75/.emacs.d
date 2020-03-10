@@ -26,3 +26,4 @@
 (package-install 'tabbar-ruler)
 (package-install 'auctex)
 (package-install 'company-math)
+(package-install 'scss-mode)
