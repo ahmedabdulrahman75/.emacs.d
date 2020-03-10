@@ -16,18 +16,32 @@
 (load "global")
 (load "javascript-lisp")
 (load "web-lisp")
-
+(load "latex-lisp")
 ;;--------------------------------------------------------------------------
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(TeX-PDF-mode t)
+ '(TeX-source-correlate-method (quote synctex))
+ '(TeX-source-correlate-mode t)
+ '(TeX-source-correlate-start-server t)
+ '(TeX-view-program-list (quote (("atril" ("atril") ""))))
+ '(TeX-view-program-selection
+   (quote
+    (((output-dvi has-no-display-manager)
+      "dvi2tty")
+     ((output-dvi style-pstricks)
+      "dvips and gv")
+     (output-dvi "xdvi")
+     (output-html "xdg-open")
+     (output-pdf "Atril"))))
  '(custom-enabled-themes (quote (adwaita)))
  '(doc-view-continuous t)
  '(package-selected-packages
    (quote
-    (org helm tabbar js2-mode company yasnippet yasnippet-snippets which-key web-mode treemacs tabbar-ruler switch-window rjsx-mode react-snippets php-mode markdown-mode json-mode idle-highlight-mode hungry-delete flyspell-correct-helm emmet-mode drag-stuff company-web company-tern company-quickhelp autopair))))
+    (auctex company-math org helm tabbar js2-mode company yasnippet yasnippet-snippets which-key web-mode treemacs tabbar-ruler switch-window rjsx-mode react-snippets php-mode markdown-mode json-mode idle-highlight-mode hungry-delete flyspell-correct-helm emmet-mode drag-stuff company-web company-tern company-quickhelp autopair))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

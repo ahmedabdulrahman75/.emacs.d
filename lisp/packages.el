@@ -24,3 +24,5 @@
 (package-install 'flyspell-correct-helm)
 (package-install 'hungry-delete)
 (package-install 'tabbar-ruler)
+(package-install 'auctex)
+(package-install 'company-math)

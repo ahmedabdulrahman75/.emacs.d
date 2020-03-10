@@ -60,3 +60,6 @@
 
 ;; tabbar-ruler
 (tabbar-ruler-move)
+
+;; company math
+(add-to-list 'company-backends 'company-math-symbols-unicode)
