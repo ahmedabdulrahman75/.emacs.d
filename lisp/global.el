@@ -63,3 +63,8 @@
 
 ;; company math
 (add-to-list 'company-backends 'company-math-symbols-unicode)
+
+;; hide show
+(add-hook 'prog-mode-hook #'hs-minor-mode)
+(global-set-key (kbd "C-c <right>") 'hs-show-block)
+(global-set-key (kbd "C-c <left>") 'hs-hide-block)
