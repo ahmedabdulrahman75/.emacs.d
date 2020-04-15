@@ -10,7 +10,6 @@
 ;;--------------------------------------------------------------------------
 ;; loading files
 ;;--------------------------------------------------------------------------
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes") ; theme folder
 (load "~/.emacs.d/general-config") ; general configuration lisp file
 (add-to-list 'load-path "~/.emacs.d/lisp") ; packages configuration file
 (load "packages")
@@ -38,10 +37,7 @@
      (output-dvi "xdvi")
      (output-html "xdg-open")
      (output-pdf "Atril"))))
- '(custom-enabled-themes (quote (high-contrast)))
- '(custom-safe-themes
-   (quote
-    ("8e7044bfad5a2e70dfc4671337a4f772ee1b41c5677b8318f17f046faa42b16b" default)))
+ '(custom-enabled-themes (quote (adwaita)))
  '(doc-view-continuous t)
  '(package-selected-packages
    (quote
