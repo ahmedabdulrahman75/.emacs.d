@@ -37,7 +37,6 @@
      (output-dvi "xdvi")
      (output-html "xdg-open")
      (output-pdf "Atril"))))
- '(custom-enabled-themes (quote (adwaita)))
  '(doc-view-continuous t)
  '(package-selected-packages
    (quote
