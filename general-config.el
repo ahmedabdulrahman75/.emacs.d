@@ -33,6 +33,3 @@
 
 ;;show parenthesis matched
 (show-paren-mode t)
-
-;; set region face color
-(set-face-attribute 'region nil :background "#5294e2")
