@@ -1,3 +1,8 @@
+;; requirements
+(package-install 'web-mode)
+(package-install 'company-web)
+(package-install 'emmet-mode)
+
 ;; web mode
 (add-to-list 'auto-mode-alist '("\\.ts\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))

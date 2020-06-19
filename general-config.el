@@ -31,5 +31,15 @@
 (global-linum-mode t)
 (add-hook 'doc-view-mode-hook (lambda() (linum-mode 0)))
 
-;;show parenthesis matched
+;; show parenthesis matched
 (show-paren-mode t)
+
+;; change the highlight color
+;; (set-face-attribute 'region nil :background "#5294E2")
+
+
+;; right to left config
+(defun set-bidi-env ()
+  "interactive"
+  (setq bidi-paragraph-direction 'nil))
+(add-hook 'org-mode-hook 'set-bidi-env)
