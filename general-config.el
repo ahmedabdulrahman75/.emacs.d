@@ -35,7 +35,7 @@
 (show-paren-mode t)
 
 ;; change the highlight color
-;; (set-face-attribute 'region nil :background "#5294E2")
+(set-face-attribute 'region nil :background "#5294E2")
 
 
 ;; right to left config

@@ -85,8 +85,3 @@
 (add-hook 'prog-mode-hook #'hs-minor-mode)
 (global-set-key (kbd "C-c <right>") 'hs-show-block)
 (global-set-key (kbd "C-c <left>") 'hs-hide-block)
-
-
-;; powerline
-(add-to-list 'load-path "~/.emacs.d/vendor/emacs-powerline")
-(require 'powerline)
