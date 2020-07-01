@@ -12,7 +12,7 @@
 ;;--------------------------------------------------------------------------
 (load "~/.emacs.d/general-config") ; general configuration lisp file
 (add-to-list 'load-path "~/.emacs.d/lisp") ; packages configuration file
-(load "packages")
+;; (load "packages")
 (load "global")
 ;; (load "javascript-lisp")
 ;; (load "web-lisp")
