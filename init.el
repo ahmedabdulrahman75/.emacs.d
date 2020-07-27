@@ -10,10 +10,10 @@
 ;;--------------------------------------------------------------------------
 ;; loading files
 ;;--------------------------------------------------------------------------
-(load "~/.emacs.d/general-config") ; general configuration lisp file
-(add-to-list 'load-path "~/.emacs.d/lisp") ; packages configuration file
+;; (load "~/.emacs.d/general-config") ; general configuration lisp file
+;; (add-to-list 'load-path "~/.emacs.d/lisp") ; packages configuration file
 ;; (load "packages")
-(load "global")
+;; (load "global")
 ;; (load "javascript-lisp")
 ;; (load "web-lisp")
 ;; (load "latex-lisp")
@@ -26,7 +26,7 @@
  '(doc-view-continuous t)
  '(package-selected-packages
    (quote
-    (org helm tabbar js2-mode company yasnippet yasnippet-snippets which-key web-mode treemacs tabbar-ruler switch-window scss-mode rjsx-mode react-snippets php-mode markdown-mode json-mode idle-highlight-mode hungry-delete flyspell-correct-helm emmet-mode drag-stuff company-web company-tern company-quickhelp company-math autopair auctex))))
+    (dap-mode helm-lsp lsp-treemacs flycheck lsp-ui lsp-mode markdown-mode+ org helm tabbar js2-mode company yasnippet yasnippet-snippets which-key web-mode treemacs tabbar-ruler switch-window scss-mode rjsx-mode react-snippets php-mode markdown-mode json-mode idle-highlight-mode hungry-delete flyspell-correct-helm emmet-mode drag-stuff company-web company-tern company-quickhelp company-math autopair auctex))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

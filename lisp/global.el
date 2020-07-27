@@ -36,7 +36,7 @@
 (autopair-global-mode)
 
 ;; treemacs
-(global-set-key [f12] 'treemacs)
+(global-set-key [f8] 'treemacs)
 
 ;; switch window
 (global-set-key (kbd "C-x o") 'switch-window)
@@ -51,7 +51,7 @@
 (global-set-key (kbd "C-x C-f") #'helm-find-files)
 
 ;; idle highlight mode
-;; (add-hook 'prog-mode-hook (lambda () (idle-highlight-mode t)))
+(add-hook 'prog-mode-hook (lambda () (idle-highlight-mode t)))
 
 ;; tabbar-mode
 (global-set-key (kbd "<C-right>")  'tabbar-forward)
