@@ -4,6 +4,9 @@
 ;; hide welcome page
 (setq inhibit-startup-screen t)
 
+;; show column
+(setq column-number-mode t)
+
 ;; ;; smart inference of indentation style
 ;; (defun infer-indentation-style ()
 ;;   ;; if our source file uses tabs, we use tabs, if spaces spaces, and if        
@@ -34,8 +37,8 @@
 ;; ;; show parenthesis matched
 ;; (show-paren-mode t)
 
-;; ;; change the highlight color
-;; (set-face-attribute 'region nil :background "#B9B9B9")
+;; change the highlight color
+(set-face-attribute 'region nil :background "#B9B9B9")
 
 
 ;; ;; right to left config
