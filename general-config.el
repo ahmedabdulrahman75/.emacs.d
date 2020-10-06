@@ -48,3 +48,8 @@
 ;;   "interactive"
 ;;   (setq bidi-paragraph-direction 'nil))
 ;; (add-hook 'org-mode-hook 'set-bidi-env)
+
+
+;; power line
+(add-to-list 'load-path "~/.emacs.d/vendor/emacs-powerline")
+(require 'powerline)
