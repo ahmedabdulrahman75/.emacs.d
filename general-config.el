@@ -26,9 +26,9 @@
 ;; Delete selection mode
 (delete-selection-mode 1)
 
-;; ;; enable spell check by default
-;; (add-hook 'text-mode-hook 'flyspell-mode)
-;; (add-hook 'prog-mode-hook 'flyspell-prog-mode)
+;; enable spell check by default
+(add-hook 'text-mode-hook 'flyspell-mode)
+(add-hook 'prog-mode-hook 'flyspell-prog-mode)
 
 ;; auto refresh all buffers
 (global-auto-revert-mode 1)
@@ -53,3 +53,6 @@
 ;; power line
 (add-to-list 'load-path "~/.emacs.d/vendor/emacs-powerline")
 (require 'powerline)
+
+;; electric pair
+(electric-pair-mode 1)
