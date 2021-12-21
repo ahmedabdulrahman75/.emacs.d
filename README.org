@@ -9,3 +9,10 @@ sudo apt install markdown
 #+BEGIN_SRC shell
 sudo npm -g install tern
 #+END_SRC
+
+* clone .emacs repo
+
+#+BEGIN_SRC shell
+git clone --recurse-submodules https://github.com/ahmed751995/.emacs.d.git
+#+END_SRC
+
