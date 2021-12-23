@@ -40,8 +40,8 @@
 ;; show parenthesis matched
 (show-paren-mode t)
 
-;; ;; change the highlight color
-;; (set-face-attribute 'region nil :background "#99C4F7")
+;; change the highlight color
+(set-face-attribute 'region nil :background "#99C4F7")
 
 ;; ;; right to left config
 ;; (defun set-bidi-env ()
