@@ -1,6 +1,5 @@
 ;; ;; requirements 
 ;; (package-install 'fill-column-indicator)
-
 ;; (package-install 'which-key)
 ;; (package-install 'yasnippet)
 ;; (package-install 'company)

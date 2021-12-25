@@ -41,7 +41,7 @@
 (show-paren-mode t)
 
 ;; change the highlight color
-(set-face-attribute 'region nil :background "#99C4F7")
+;; (set-face-attribute 'region nil :background "#99C4F7")
 
 ;; ;; right to left config
 ;; (defun set-bidi-env ()
@@ -56,3 +56,7 @@
 
 ;; electric pair
 (electric-pair-mode 1)
+
+;;Window Move
+(when (fboundp 'windmove-default-keybindings)
+  (windmove-default-keybindings))
