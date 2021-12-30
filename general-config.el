@@ -60,3 +60,6 @@
 ;;Window Move
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings))
+
+;; hide tool bar
+(tool-bar-mode -1)
