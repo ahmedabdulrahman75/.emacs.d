@@ -1,3 +1,9 @@
+;; requirements
+(package-install 'js2-mode)
+(package-install 'rjsx-mode)
+(package-install 'react-snippets)
+(package-install 'json-mode)
+
 ;; js2-mode
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
