@@ -63,3 +63,6 @@
 
 ;; hide tool bar
 (tool-bar-mode -1)
+
+;; python3 shell interpreter
+(setq python-shell-interpreter "python3")

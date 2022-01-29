@@ -11,8 +11,8 @@
 ;; loading files
 ;;--------------------------------------------------------------------------
 (load "~/.emacs.d/general-config") ; general configuration lisp file
-;; (add-to-list 'load-path "~/.emacs.d/lisp") ; packages configuration file
-;; (load "global")
+(add-to-list 'load-path "~/.emacs.d/lisp") ; packages configuration file
+(load "global")
 ;; (load "javascript-lisp")
 ;; (load "web-lisp")
 ;; (load "latex-lisp")
@@ -22,9 +22,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(adwaita))
- '(package-selected-packages '(markdown-mode markdown-mode+))
- '(python-shell-interpreter "python3"))
+ '(custom-enabled-themes nil)
+ '(package-selected-packages '(markdown-mode markdown-mode+)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

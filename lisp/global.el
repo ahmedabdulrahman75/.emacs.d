@@ -1,15 +1,13 @@
-;; ;; requirements 
+;; requirements 
 ;; (package-install 'fill-column-indicator)
 ;; (package-install 'which-key)
-;; (package-install 'yasnippet)
-;; (package-install 'company)
-;; (package-install 'company-quickhelp)
-;; (package-install 'autopair)
+(package-install 'yasnippet)
+(package-install 'company)
+(package-install 'company-quickhelp)
 ;; (package-install 'markdown-mode)
-;; (package-install 'treemacs)
-;; (package-install 'switch-window)
+(package-install 'treemacs)
 ;; (package-install 'tabbar)
-;; (package-install 'yasnippet-snippets)
+(package-install 'yasnippet-snippets)
 ;; (package-install 'helm)
 ;; (package-install 'drag-stuff)
 ;; (package-install 'org)
@@ -26,29 +24,23 @@
 ;; ;; which key mode
 ;; (which-key-mode)
 
-;; ;; company mode
-;; (add-hook 'after-init-hook 'global-company-mode)
-;; (global-set-key (kbd "C-<tab>") 'company-complete) ; show completion suggestions by using tab key
-;; ;; some improvement to company mode
-;; (setq company-minimum-prefix-length 1)
-;; (setq company-dabbrev-downcase 0)
-;; (setq company-idle-delay 0)
+;; company mode
+(add-hook 'after-init-hook 'global-company-mode)
+(global-set-key (kbd "C-<tab>") 'company-complete) ; show completion suggestions by using tab key
+;; some improvement to company mode
+(setq company-minimum-prefix-length 1)
+(setq company-dabbrev-downcase 0)
+(setq company-idle-delay 0)
 
-;; ;; company quick help
-;; (company-quickhelp-mode)
+;; company quick help
+(company-quickhelp-mode)
 
-;; ;; autopair
-;; (autopair-global-mode)
+;; treemacs
+(global-set-key [f8] 'treemacs)
 
-;; ;; treemacs
-;; (global-set-key [f8] 'treemacs)
 
-;; ;; switch window
-;; (global-set-key (kbd "C-x o") 'switch-window)
-;; (setq switch-window-shortcut-style 'qwerty) ;;using (a-z) instead of (1-9)
-
-;; ;; yasnippet
-;; (yas-global-mode 1)
+;; yasnippet
+(yas-global-mode 1)
 
 ;; ;; helm mode
 ;; (global-set-key (kbd "M-x") #'helm-M-x)
@@ -73,15 +65,15 @@
 ;; ;; hungry delete
 ;; (global-hungry-delete-mode)
 
-;; ;; enable yasnippet with company mode
-;; (defun autocomplete-show-snippets ()
-;;   "Show snippets in autocomplete popup."
-;;   (let ((backend (car company-backends)))
-;;     (unless (listp backend)
-;;       (setcar company-backends `(,backend :with company-yasnippet company-files)))))
-;; ;; See http://www.gnu.org/software/emacs/manual/html_node/emacs/Hooks.html
-;; ;; for what this line means
-;; (add-hook 'after-change-major-mode-hook 'autocomplete-show-snippets)
+;; enable yasnippet with company mode
+(defun autocomplete-show-snippets ()
+  "Show snippets in autocomplete popup."
+  (let ((backend (car company-backends)))
+    (unless (listp backend)
+      (setcar company-backends `(,backend :with company-yasnippet company-files)))))
+;; See http://www.gnu.org/software/emacs/manual/html_node/emacs/Hooks.html
+;; for what this line means
+(add-hook 'after-change-major-mode-hook 'autocomplete-show-snippets)
 
 ;; ;; tabbar-ruler
 ;; (tabbar-ruler-move)
