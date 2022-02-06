@@ -13,6 +13,7 @@
 (load "~/.emacs.d/general-config") ; general configuration lisp file
 (add-to-list 'load-path "~/.emacs.d/lisp") ; packages configuration file
 (load "global")
+(load "python-lisp")
 ;; (load "javascript-lisp")
 ;; (load "web-lisp")
 ;; (load "latex-lisp")
