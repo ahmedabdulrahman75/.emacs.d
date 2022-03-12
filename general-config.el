@@ -10,14 +10,16 @@
 ;; stop beep sound
 (setq visible-bell t)
 
-;; ;; smart inference of indentation style
-;; (defun infer-indentation-style ()
-;;   ;; if our source file uses tabs, we use tabs, if spaces spaces, and if        
-;;   ;; neither, we use the current indent-tabs-mode                               
-;;   (let ((space-count (how-many "^  " (point-min) (point-max)))
-;;         (tab-count (how-many "^\t" (point-min) (point-max))))
-;;     (if (> space-count tab-count) (setq indent-tabs-mode nil))
-;;     (if (> tab-count space-count) (setq indent-tabs-mode t))))
+;; smart inference of indentation style
+(defun infer-indentation-style ()
+  ;; if our source file uses tabs, we use tabs, if spaces spaces, and if        
+  ;; neither, we use the current indent-tabs-mode                               
+  (let ((space-count (how-many "^  " (point-min) (point-max)))
+        (tab-count (how-many "^\t" (point-min) (point-max))))
+    (if (> space-count tab-count) (setq indent-tabs-mode nil))
+    (if (> tab-count space-count) (setq indent-tabs-mode t))))
+(setq indent-tabs-mode nil)
+(infer-indentation-style)
 
 ;; don't accelerate scrolling
 (setq mouse-wheel-progressive-speed nil)
@@ -66,3 +68,4 @@
 
 ;; python3 shell interpreter
 (setq python-shell-interpreter "python3")
+
