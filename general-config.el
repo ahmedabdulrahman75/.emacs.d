@@ -69,3 +69,5 @@
 ;; python3 shell interpreter
 (setq python-shell-interpreter "python3")
 
+;; enable emacs client
+(server-start) 
