@@ -1,6 +1,6 @@
 ;; requirements 
 ;; (package-install 'fill-column-indicator)
-;; (package-install 'which-key)
+(package-install 'which-key)
 (package-install 'yasnippet)
 (package-install 'company)
 (package-install 'company-quickhelp)
@@ -8,23 +8,21 @@
 (package-install 'markdown-preview-mode)
 (package-install 'impatient-mode)
 (package-install 'treemacs)
-;; (package-install 'tabbar)
 (package-install 'yasnippet-snippets)
 ;; (package-install 'helm)
-;; (package-install 'drag-stuff)
-;; (package-install 'org)
+(package-install 'drag-stuff)
 ;; (package-install 'flyspell-correct-helm)
 ;; (package-install 'hungry-delete)
-;; (package-install 'tabbar-ruler)
+(package-install 'tabbar-ruler)
 ;; (package-install 'idle-highlight-mode)
-
+(package-install 'indent-guide)
 ;; ;; fill-column-indicator
 ;; (define-globalized-minor-mode my-global-fci-mode fci-mode turn-on-fci-mode)
 ;; (my-global-fci-mode 1)
 
 
-;; ;; which key mode
-;; (which-key-mode)
+;; which key mode
+(which-key-mode)
 
 ;; company mode
 (add-hook 'after-init-hook 'global-company-mode)
@@ -52,13 +50,16 @@
 ;; ;; idle highlight mode
 ;; (add-hook 'prog-mode-hook (lambda () (idle-highlight-mode t)))
 
-;; ;; tabbar-mode
-;; (global-set-key (kbd "<C-right>")  'tabbar-forward)
-;; (global-set-key (kbd "<C-left>")  'tabbar-backward)
+;; tabbar-mode
+(global-set-key (kbd "<C-right>")  'tabbar-forward)
+(global-set-key (kbd "<C-left>")  'tabbar-backward)
 
-;; ;; Drag Stuff
-;; (drag-stuff-global-mode 1)
-;; (drag-stuff-define-keys)
+;; tabbar-ruler
+(tabbar-ruler-move)
+
+;; Drag Stuff
+(drag-stuff-global-mode 1)
+(drag-stuff-define-keys)
 
 ;; ;; flyspell correct helm
 ;; (require 'flyspell-correct-helm)
@@ -77,10 +78,11 @@
 ;; for what this line means
 (add-hook 'after-change-major-mode-hook 'autocomplete-show-snippets)
 
-;; ;; tabbar-ruler
-;; (tabbar-ruler-move)
 
 ;; ;; hide show
 ;; (add-hook 'prog-mode-hook #'hs-minor-mode)
 ;; (global-set-key (kbd "C-c <right>") 'hs-show-block)
 ;; (global-set-key (kbd "C-c <left>") 'hs-hide-block)
+
+;; indent guide
+(indent-guide-global-mode)
