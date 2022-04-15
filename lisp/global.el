@@ -12,7 +12,7 @@
 ;; (package-install 'helm)
 (package-install 'drag-stuff)
 ;; (package-install 'flyspell-correct-helm)
-;; (package-install 'hungry-delete)
+(package-install 'hungry-delete)
 (package-install 'tabbar-ruler)
 ;; (package-install 'idle-highlight-mode)
 (package-install 'indent-guide)
@@ -65,8 +65,8 @@
 ;; (require 'flyspell-correct-helm)
 ;; (define-key flyspell-mode-map (kbd "C-;") 'flyspell-correct-wrapper)
 
-;; ;; hungry delete
-;; (global-hungry-delete-mode)
+;; hungry delete
+(global-hungry-delete-mode)
 
 ;; enable yasnippet with company mode
 (defun autocomplete-show-snippets ()
