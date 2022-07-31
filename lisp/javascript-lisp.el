@@ -15,3 +15,10 @@
 
 (add-hook 'typescript-mode-hook '(lambda () 
  (setq typescript-indent-level 2)))
+
+(add-hook 'javascript-mode-hook '(lambda () 
+ (setq typescript-indent-level 2)))
+
+
+;; prettier mode
+(add-hook 'js2-mode-hook 'prettier-mode)

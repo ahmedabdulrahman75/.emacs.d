@@ -1,5 +1,4 @@
 ;; requirements 
-;; (package-install 'fill-column-indicator)
 (package-install 'which-key)
 (package-install 'yasnippet)
 (package-install 'company)
@@ -9,17 +8,18 @@
 (package-install 'impatient-mode)
 (package-install 'treemacs)
 (package-install 'yasnippet-snippets)
-;; (package-install 'helm)
 (package-install 'drag-stuff)
-;; (package-install 'flyspell-correct-helm)
 (package-install 'hungry-delete)
 (package-install 'tabbar-ruler)
-;; (package-install 'idle-highlight-mode)
 (package-install 'indent-guide)
+(package-install 'prettier)
+;; (package-install 'fill-column-indicator)
+;; (package-install 'helm)
+;; (package-install 'flyspell-correct-helm)
+;; (package-install 'idle-highlight-mode)
 ;; ;; fill-column-indicator
 ;; (define-globalized-minor-mode my-global-fci-mode fci-mode turn-on-fci-mode)
 ;; (my-global-fci-mode 1)
-
 
 ;; which key mode
 (which-key-mode)
