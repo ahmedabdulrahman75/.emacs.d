@@ -13,10 +13,11 @@
 (package-install 'tabbar-ruler)
 (package-install 'indent-guide)
 (package-install 'prettier)
+(package-install 'helm)
 ;; (package-install 'fill-column-indicator)
-;; (package-install 'helm)
 ;; (package-install 'flyspell-correct-helm)
 ;; (package-install 'idle-highlight-mode)
+
 ;; ;; fill-column-indicator
 ;; (define-globalized-minor-mode my-global-fci-mode fci-mode turn-on-fci-mode)
 ;; (my-global-fci-mode 1)
@@ -38,14 +39,14 @@
 ;; treemacs
 (global-set-key [f8] 'treemacs)
 
-
 ;; yasnippet
 (yas-global-mode 1)
 
-;; ;; helm mode
-;; (global-set-key (kbd "M-x") #'helm-M-x)
-;; (global-set-key (kbd "C-x r b") #'helm-filtered-bookmarks)
-;; (global-set-key (kbd "C-x C-f") #'helm-find-files)
+;; helm mode
+(global-set-key (kbd "M-x") #'helm-M-x)
+(global-set-key (kbd "C-x r b") #'helm-filtered-bookmarks)
+(global-set-key (kbd "C-x C-f") #'helm-find-files)
+(helm-mode 1)
 
 ;; ;; idle highlight mode
 ;; (add-hook 'prog-mode-hook (lambda () (idle-highlight-mode t)))

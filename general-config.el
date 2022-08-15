@@ -70,4 +70,5 @@
 (setq python-shell-interpreter "python3")
 
 ;; enable emacs client
-(server-start) 
+(server-force-delete)
+(server-start)

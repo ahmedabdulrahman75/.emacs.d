@@ -7,7 +7,7 @@ sudo apt install markdown
 * npm packages required
 
 #+BEGIN_SRC shell
-sudo npm -g install tern
+sudo npm -g install tern prettier
 #+END_SRC
 
 * clone .emacs repo
