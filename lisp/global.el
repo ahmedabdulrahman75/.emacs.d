@@ -10,10 +10,13 @@
 (package-install 'yasnippet-snippets)
 (package-install 'drag-stuff)
 (package-install 'hungry-delete)
-(package-install 'tabbar-ruler)
 (package-install 'indent-guide)
 (package-install 'prettier)
 (package-install 'helm)
+(package-install 'mode-icons)
+(package-install 'all-the-icons)
+(package-install 'centaur-tabs)
+(package-install 'doom-modeline)
 ;; (package-install 'fill-column-indicator)
 ;; (package-install 'flyspell-correct-helm)
 ;; (package-install 'idle-highlight-mode)
@@ -51,12 +54,6 @@
 ;; ;; idle highlight mode
 ;; (add-hook 'prog-mode-hook (lambda () (idle-highlight-mode t)))
 
-;; tabbar-mode
-(global-set-key (kbd "<C-right>")  'tabbar-forward)
-(global-set-key (kbd "<C-left>")  'tabbar-backward)
-
-;; tabbar-ruler
-(tabbar-ruler-move)
 
 ;; Drag Stuff
 (drag-stuff-global-mode 1)
@@ -87,3 +84,22 @@
 
 ;; indent guide
 (indent-guide-global-mode)
+
+
+;; mode-icons
+(mode-icons-mode 1)
+
+;; all-the-icons
+(when (display-graphic-p)
+  (require 'all-the-icons))
+
+;;centaur tabs
+(centaur-tabs-mode t)
+(global-set-key (kbd "<C-left>")  'centaur-tabs-backward)
+(global-set-key (kbd "<C-right>") 'centaur-tabs-forward)
+(setq centaur-tabs-style "bar")
+(setq centaur-tabs-set-icons t)
+(setq centaur-tabs-show-navigation-buttons t)
+
+;; doom-modeline
+(doom-modeline-mode 1)

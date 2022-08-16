@@ -51,11 +51,6 @@
 ;;   (setq bidi-paragraph-direction 'nil))
 ;; (add-hook 'org-mode-hook 'set-bidi-env)
 
-
-;; power line
-(add-to-list 'load-path "~/.emacs.d/vendor/emacs-powerline")
-(require 'powerline)
-
 ;; electric pair
 (electric-pair-mode 1)
 
@@ -65,6 +60,9 @@
 
 ;; hide tool bar
 (tool-bar-mode -1)
+
+;; hide menu bar
+(menu-bar-mode -1)
 
 ;; python3 shell interpreter
 (setq python-shell-interpreter "python3")
