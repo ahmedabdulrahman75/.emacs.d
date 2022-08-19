@@ -26,7 +26,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(adwaita))
+ '(custom-enabled-themes nil)
  '(package-selected-packages
    '(php-mode prettier py-autopep8 indent-guide markdown-mode company yasnippet org yasnippet-snippets treemacs markdown-preview-mode impatient-mode company-quickhelp)))
 (custom-set-faces

@@ -9,7 +9,6 @@
 (package-install 'treemacs)
 (package-install 'yasnippet-snippets)
 (package-install 'drag-stuff)
-(package-install 'hungry-delete)
 (package-install 'indent-guide)
 (package-install 'prettier)
 (package-install 'helm)
@@ -17,6 +16,9 @@
 (package-install 'all-the-icons)
 (package-install 'centaur-tabs)
 (package-install 'doom-modeline)
+(package-install 'magit)
+(package-install 'multiple-cursors)
+;; (package-install 'hungry-delete)
 ;; (package-install 'fill-column-indicator)
 ;; (package-install 'flyspell-correct-helm)
 ;; (package-install 'idle-highlight-mode)
@@ -64,7 +66,7 @@
 ;; (define-key flyspell-mode-map (kbd "C-;") 'flyspell-correct-wrapper)
 
 ;; hungry delete
-(global-hungry-delete-mode)
+;; (global-hungry-delete-mode)
 
 ;; enable yasnippet with company mode
 (defun autocomplete-show-snippets ()
@@ -103,3 +105,8 @@
 
 ;; doom-modeline
 (doom-modeline-mode 1)
+
+;; multiple-cursors
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
