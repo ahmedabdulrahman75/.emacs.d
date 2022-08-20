@@ -102,6 +102,7 @@
 (setq centaur-tabs-style "bar")
 (setq centaur-tabs-set-icons t)
 (setq centaur-tabs-show-navigation-buttons t)
+(centaur-tabs-group-by-projectile-project)
 
 ;; doom-modeline
 (doom-modeline-mode 1)
