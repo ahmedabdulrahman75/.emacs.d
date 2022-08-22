@@ -21,4 +21,4 @@
 
 
 ;; prettier mode
-(add-hook 'js2-mode-hook 'prettier-mode)
+;; (add-hook 'js2-mode-hook 'prettier-mode)

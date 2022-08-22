@@ -4,7 +4,6 @@
 (package-install 'emmet-mode)
 
 ;; web mode
-(add-to-list 'auto-mode-alist '("\\.ts\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.css?\\'" . web-mode))
 
@@ -26,4 +25,4 @@
 (add-hook 'web-mode-hook  'emmet-mode)
 
 ;; enable prettier
-(add-hook 'web-mode-hook 'prettier-mode)
+;; (add-hook 'web-mode-hook 'prettier-mode)
