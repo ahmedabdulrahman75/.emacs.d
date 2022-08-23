@@ -18,6 +18,7 @@
 (package-install 'doom-modeline)
 (package-install 'magit)
 (package-install 'multiple-cursors)
+(package-install 'flycheck)
 ;; (package-install 'hungry-delete)
 ;; (package-install 'fill-column-indicator)
 ;; (package-install 'flyspell-correct-helm)
@@ -111,3 +112,7 @@
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
+
+;;flycheck-mode
+(global-flycheck-mode)

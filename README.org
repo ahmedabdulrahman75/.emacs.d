@@ -16,3 +16,8 @@ sudo npm -g install tern prettier
 git clone --recurse-submodules https://github.com/ahmed751995/.emacs.d.git
 #+END_SRC
 
+
+* TODO
+  - [ ] write docs about installed packages (centaur-tabs ...)
+  - [ ] write my custom keyboard shortcuts 
+  - [ ] read about tide package
