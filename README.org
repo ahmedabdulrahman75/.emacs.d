@@ -13,11 +13,32 @@ sudo npm -g install tern prettier
 * clone .emacs repo
 
 #+BEGIN_SRC shell
-git clone --recurse-submodules https://github.com/ahmed751995/.emacs.d.git
+git clone https://github.com/ahmed751995/.emacs.d.git
 #+END_SRC
 
+* after install
+
+  after installing *all-the-icons* run from emacs the following command
+  #+BEGIN_SRC elisp
+  M-x all-the-icons-install-fonts
+  #+END_SRC
+
+  and in the shell run the following command (*for linux users*)
+  #+BEGIN_SRC shell
+  fc-cache -f -v
+  #+END_SRC
+
+* Keyboard shortcuts
+  - [f8] for treemacs
+  - "C-c <right>" hs-show-block
+  - "C-c <left>" hs-hide-block
+  - "<C-right>" & "<C-left>" centaur-tabs forward and backward
+  - "C-<" & "C->" mark next and preview like words
+  - "C-c C-<" mark all like words
+    
+
+* Notes
+  prettier packages installed but disabled by default
 
 * TODO
-  - [ ] write docs about installed packages (centaur-tabs ...)
-  - [ ] write my custom keyboard shortcuts 
-  - [ ] read about tide package
+  - [ ] improve docs
