@@ -19,6 +19,7 @@
 (load "javascript-lisp")
 (load "web-lisp")
 (load "php-lisp")
+(load "sessions-lisp")
 ;; (load "latex-lisp")
 ;;--------------------------------------------------------------------------
 (custom-set-variables
