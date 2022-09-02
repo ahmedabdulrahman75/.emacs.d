@@ -10,6 +10,12 @@ sudo apt install markdown
 sudo npm -g install tern prettier
 #+END_SRC
 
+* pip packages required
+
+#+BEGIN_SRC shell
+sudo pip3 install flake8 jedi
+#+END_SRC
+
 * clone .emacs repo
 
 #+BEGIN_SRC shell
@@ -30,8 +36,8 @@ git clone https://github.com/ahmed751995/.emacs.d.git
 
 * Keyboard shortcuts
   - [f8] for treemacs
-  - "C-c <right>" hs-show-block
-  - "C-c <left>" hs-hide-block
+  - "C-c C-f" hs-toggle-hide 
+  (same shortcut works with web-mode but it's the default shortcut in webmode)
   - "<C-right>" & "<C-left>" centaur-tabs forward and backward
   - "C-<" & "C->" mark next and preview like words
   - "C-c C-<" mark all like words

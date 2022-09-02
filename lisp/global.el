@@ -79,12 +79,6 @@
 ;; for what this line means
 (add-hook 'after-change-major-mode-hook 'autocomplete-show-snippets)
 
-
-;; ;; hide show
-(add-hook 'prog-mode-hook #'hs-minor-mode)
-(global-set-key (kbd "C-c <right>") 'hs-show-block)
-(global-set-key (kbd "C-c <left>") 'hs-hide-block)
-
 ;; indent guide
 (indent-guide-global-mode)
 

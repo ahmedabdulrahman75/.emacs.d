@@ -1,6 +1,6 @@
 ;; requirements
+;; (package-install 'company-jedi)
 (package-install 'py-autopep8)
-
 
 ;; py-autopep8
 (add-hook 'python-mode-hook 'py-autopep8-enable-on-save)

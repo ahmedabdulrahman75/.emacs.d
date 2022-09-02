@@ -19,7 +19,7 @@
 (load "javascript-lisp")
 (load "web-lisp")
 (load "php-lisp")
-(load "sessions-lisp")
+;; (load "sessions-lisp")
 ;; (load "latex-lisp")
 ;;--------------------------------------------------------------------------
 (custom-set-variables
@@ -29,7 +29,8 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(adwaita))
  '(package-selected-packages
-   '(php-mode prettier py-autopep8 indent-guide markdown-mode company yasnippet org yasnippet-snippets treemacs markdown-preview-mode impatient-mode company-quickhelp)))
+   '(php-mode prettier py-autopep8 indent-guide markdown-mode company yasnippet org yasnippet-snippets treemacs markdown-preview-mode impatient-mode company-quickhelp))
+ '(session-use-package t nil (session)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

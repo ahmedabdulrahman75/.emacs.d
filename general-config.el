@@ -70,3 +70,12 @@
 ;; enable emacs client
 (server-force-delete)
 (server-start)
+
+
+;; stop auto indent
+(electric-indent-mode 0)
+
+
+;; hide show
+(add-hook 'prog-mode-hook #'hs-minor-mode)
+(global-set-key (kbd "C-c C-f") 'hs-toggle-hiding)
