@@ -23,6 +23,3 @@
 
 ;; enable emmet-mode with web-mode
 (add-hook 'web-mode-hook  'emmet-mode)
-
-;; enable prettier
-;; (add-hook 'web-mode-hook 'prettier-mode)

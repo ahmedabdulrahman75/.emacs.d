@@ -1,7 +1,6 @@
 * packages required
-  
 #+BEGIN_SRC shell
-sudo apt install markdown  
+sudo apt install markdown clang-format
 #+END_SRC
 
 * npm packages required
@@ -48,3 +47,4 @@ git clone https://github.com/ahmed751995/.emacs.d.git
 
 * TODO
   - [ ] improve docs
+    

@@ -29,8 +29,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(adwaita))
  '(package-selected-packages
-   '(php-mode prettier py-autopep8 indent-guide markdown-mode company yasnippet org yasnippet-snippets treemacs markdown-preview-mode impatient-mode company-quickhelp))
- '(session-use-package t nil (session)))
+   '(typescript-mode js2-mode flycheck markdown-mode company yasnippet yasnippet-snippets which-key web-mode treemacs tide rjsx-mode react-snippets py-autopep8 prettier multiple-cursors mode-icons markdown-preview-mode magit json-mode indent-guide impatient-mode helm emmet-mode drag-stuff doom-modeline company-web company-quickhelp centaur-tabs all-the-icons)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

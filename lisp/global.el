@@ -10,7 +10,7 @@
 (package-install 'yasnippet-snippets)
 (package-install 'drag-stuff)
 (package-install 'indent-guide)
-(package-install 'prettier)
+(package-install 'format-all)
 (package-install 'helm)
 (package-install 'mode-icons)
 (package-install 'all-the-icons)

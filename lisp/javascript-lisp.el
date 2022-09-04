@@ -20,11 +20,6 @@
 (add-hook 'javascript-mode-hook '(lambda () 
  (setq typescript-indent-level 2)))
 
-
-;; prettier mode
-;; (add-hook 'js2-mode-hook 'prettier-mode)
-
-
 (defun setup-tide-mode ()
   (interactive)
   (tide-setup)
