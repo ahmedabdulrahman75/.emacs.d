@@ -62,7 +62,7 @@
 
 
 ;; stop auto indent
-(electric-indent-mode 0)
+;; (electric-indent-mode 0)
 
 
 ;; hide show
@@ -72,3 +72,4 @@
 
 ;; space instead of tabs
 (setq-default indent-tabs-mode nil)
+

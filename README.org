@@ -36,10 +36,13 @@ git clone https://github.com/ahmed751995/.emacs.d.git
 * Keyboard shortcuts
   - [f8] for treemacs
   - "C-c C-f" hs-toggle-hide 
-  (same shortcut works with web-mode but it's the default shortcut in webmode)
+    #+BEGIN_QUOTE
+    (same shortcut works with web-mode but it's the default shortcut in webmode)
+    #+END_QUOTE
   - "<C-right>" & "<C-left>" centaur-tabs forward and backward
   - "C-<" & "C->" mark next and preview like words
   - "C-c C-<" mark all like words
+  - "C-c C-v" preview html file in browser
     
 
 * Notes

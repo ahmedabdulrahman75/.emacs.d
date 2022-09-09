@@ -23,3 +23,7 @@
 
 ;; enable emmet-mode with web-mode
 (add-hook 'web-mode-hook  'emmet-mode)
+
+;; browse url file in browser
+(add-hook 'web-mode-hook
+          (lambda () (local-set-key (kbd "C-c C-v") #'browse-url-of-file)))
