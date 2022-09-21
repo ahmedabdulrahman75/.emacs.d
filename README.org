@@ -12,7 +12,7 @@ sudo npm -g install tern prettier
 * pip packages required
 
 #+BEGIN_SRC shell
-sudo pip3 install flake8 jedi
+sudo pip3 install pylint jedi
 #+END_SRC
 
 * clone .emacs repo
