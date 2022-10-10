@@ -73,3 +73,6 @@
 ;; space instead of tabs
 (setq-default indent-tabs-mode nil)
 
+;; enable column indicator in prog-mode
+(add-hook 'prog-mode-hook #'display-fill-column-indicator-mode)
+
