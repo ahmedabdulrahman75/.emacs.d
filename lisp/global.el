@@ -19,6 +19,7 @@
 (package-install 'magit)
 (package-install 'multiple-cursors)
 (package-install 'flycheck)
+(package-install 'editorconfig)
 ;; (package-install 'hungry-delete)
 ;; (package-install 'fill-column-indicator)
 ;; (package-install 'flyspell-correct-helm)
@@ -108,5 +109,8 @@
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
 
-;;flycheck-mode
+;; flycheck-mode
 (global-flycheck-mode)
+
+;; editorconfig
+(editorconfig-mode 1)
