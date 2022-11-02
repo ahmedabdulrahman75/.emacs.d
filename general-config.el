@@ -32,7 +32,7 @@
 (show-paren-mode t)
 
 ;; change the highlight color
-(set-face-attribute 'region nil :background "#99C4F7")
+;; (set-face-attribute 'region nil :background "#99C4F7")
 
 ;; ;; right to left config
 ;; (defun set-bidi-env ()
@@ -76,3 +76,6 @@
 ;; enable column indicator in prog-mode
 (add-hook 'prog-mode-hook #'display-fill-column-indicator-mode)
 
+
+;; flymake
+(add-hook 'prog-mode-hook 'flymake-mode)
