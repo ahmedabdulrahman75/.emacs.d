@@ -21,6 +21,7 @@
 (package-install 'ivy)
 (package-install 'counsel)
 (package-install 'swiper)
+(package-install 'switch-window)
 ;; (package-install 'fill-column-indicator)
 ;; (package-install 'idle-highlight-mode)
 
@@ -125,3 +126,8 @@
 (global-set-key (kbd "C-x l") 'counsel-locate)
 (global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
 (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
+
+
+;; switch-window
+(global-set-key (kbd "C-x o") 'switch-window)
+(setq switch-window-shortcut-style 'qwerty)
