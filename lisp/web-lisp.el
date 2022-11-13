@@ -6,6 +6,7 @@
 ;; web mode
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.css?\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.jsx?$" . web-mode))
 
 ;; some configurations to web mode
 ;; (setq web-mode-enable-current-column-highlight t)
@@ -15,13 +16,15 @@
   (set (make-local-variable 'company-backends)
        '(company-css company-web-html company-yasnippet company-files))
   (setq web-mode-markup-indent-offset 2) ;; set indentation to 2 spaces
-  (set-face-attribute 'web-mode-html-tag-bracket-face nil :foreground "#D0CFCC")
-  (set-face-attribute 'web-mode-html-tag-face nil :foreground "#2A7BDE")
-  (set-face-background 'web-mode-current-element-highlight-face "#E9AD0C")
+  (set-face-attribute 'web-mode-html-tag-bracket-face nil :foreground "#757575")
+  (set-face-attribute 'web-mode-html-tag-face nil :foreground "#0D53A7")
+  (set-face-background 'web-mode-current-element-highlight-face "#A79204")
 )
 
 (add-hook 'web-mode-hook  'my-web-mode-hook)
 
+;; jsx highlight
+(setq web-mode-content-types-alist '(("jsx" . "\\.js[x]?\\'")))
 ;; enable emmet-mode with web-mode
 (add-hook 'web-mode-hook  'emmet-mode)
 

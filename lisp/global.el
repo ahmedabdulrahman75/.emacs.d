@@ -22,6 +22,7 @@
 (package-install 'counsel)
 (package-install 'swiper)
 (package-install 'switch-window)
+(package-install 'eglot)
 ;; (package-install 'fill-column-indicator)
 ;; (package-install 'idle-highlight-mode)
 
@@ -131,3 +132,7 @@
 ;; switch-window
 (global-set-key (kbd "C-x o") 'switch-window)
 (setq switch-window-shortcut-style 'qwerty)
+
+
+;; eglot
+(add-hook 'prog-mode-hook 'eglot-ensure)

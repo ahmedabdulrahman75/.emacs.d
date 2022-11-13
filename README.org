@@ -1,25 +1,28 @@
 * packages required
-#+BEGIN_SRC shell
-sudo apt install markdown clang-format
-#+END_SRC
+  #+BEGIN_SRC shell
+  sudo apt install markdown clang-format python-venv
+  #+END_SRC
 
 * npm packages required
 
-#+BEGIN_SRC shell
-sudo npm -g install tern prettier
-#+END_SRC
+  #+BEGIN_SRC shell
+  sudo npm -g install tern prettier
+  #+END_SRC
 
 * pip packages required
+  create virtual environment at ~~/workspace/venv/development/~.
+  activate the virtual environment ~source ~/workspace/venv/development/bin/activate~.
+  then run the following command
 
-#+BEGIN_SRC shell
-sudo pip3 install pylint jedi
-#+END_SRC
+  #+BEGIN_SRC shell
+  pip install 'python-language-server[autopep8]'
+  #+END_SRC
 
 * clone .emacs repo
 
-#+BEGIN_SRC shell
-git clone https://github.com/ahmed751995/.emacs.d.git
-#+END_SRC
+  #+BEGIN_SRC shell
+  git clone https://github.com/ahmed751995/.emacs.d.git
+  #+END_SRC
 
 * after install
 
@@ -44,10 +47,10 @@ git clone https://github.com/ahmed751995/.emacs.d.git
   - "C-c C-<" mark all like words
   - "C-c C-v" preview html file in browser
     
-
 * Notes
-  prettier packages installed but disabled by default
+  prettier is used by *[[https://github.com/lassik/emacs-format-all-the-code][emacs-format-all-the-code]]*
 
 * TODO
+  - [ ] find like pyvenv for js
   - [ ] improve docs
     
