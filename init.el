@@ -36,7 +36,7 @@
  '(awesome-tray-mode-line-inactive-color "#323232")
  '(chart-face-color-list
    '("#b52c2c" "#4fd100" "#f1e00a" "#2fafef" "#bf94fe" "#47dfea" "#702020" "#007800" "#b08600" "#1f2f8f" "#5f509f" "#00808f"))
- '(custom-enabled-themes '(adwaita))
+ '(custom-enabled-themes nil)
  '(custom-safe-themes
    '("1cae4424345f7fe5225724301ef1a793e610ae5a4e23c023076dc334a9eb940a" "aec7b55f2a13307a55517fdf08438863d694550565dee23181d2ebd973ebd6b8" "eabc4781c1d1f4db48bdc99508bb5b31baae6452edcab18aa6de75e6dce01f66" "36ca8f60565af20ef4f30783aa16a26d96c02df7b4e54e9900a5138fb33808da" "e87f48ec4aebdca07bb865b90088eb28ae4b286ee8473aadb39213d361d0c45f" "046e442b73846ae114d575a51be9edb081a1ef29c05ae5e237d5769ecfd70c2e" "06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" "bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" "82d2cac368ccdec2fcc7573f24c3f79654b78bf133096f9b40c20d97ec1d8016" default))
  '(exwm-floating-border-color "#646464")
@@ -72,7 +72,7 @@
  '(mini-modeline-face-attr '(:background unspecified))
  '(org-src-block-faces 'nil)
  '(package-selected-packages
-   '(pyvenv switch-window editorconfig typescript-mode js2-mode flycheck markdown-mode company yasnippet yasnippet-snippets which-key web-mode treemacs tide rjsx-mode react-snippets py-autopep8 prettier multiple-cursors mode-icons markdown-preview-mode magit json-mode indent-guide impatient-mode emmet-mode drag-stuff company-web company-quickhelp centaur-tabs all-the-icons))
+   '(php-mode eglot swiper counsel ivy doom-modeline format-all pyvenv switch-window editorconfig typescript-mode js2-mode flycheck markdown-mode company yasnippet yasnippet-snippets which-key web-mode treemacs tide rjsx-mode react-snippets py-autopep8 prettier multiple-cursors mode-icons markdown-preview-mode magit json-mode indent-guide impatient-mode emmet-mode drag-stuff company-web company-quickhelp centaur-tabs all-the-icons))
  '(pdf-view-midnight-colors '("#ffffff" . "#100f10"))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map

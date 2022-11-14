@@ -17,7 +17,7 @@
        '(company-css company-web-html company-yasnippet company-files))
   (setq web-mode-markup-indent-offset 2) ;; set indentation to 2 spaces
   (set-face-attribute 'web-mode-html-tag-bracket-face nil :foreground "#757575")
-  (set-face-attribute 'web-mode-html-tag-face nil :foreground "#0D53A7")
+  (set-face-attribute 'web-mode-html-tag-face nil :foreground "#06356E")
   (set-face-background 'web-mode-current-element-highlight-face "#A79204")
 )
 

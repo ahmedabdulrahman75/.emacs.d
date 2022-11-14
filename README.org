@@ -10,9 +10,14 @@
   #+END_SRC
 
 * pip packages required
-  create virtual environment at ~~/workspace/venv/development/~.
-  activate the virtual environment ~source ~/workspace/venv/development/bin/activate~.
-  then run the following command
+  create virtual environment at =~/workspace/venv/development/= then activate 
+  the created virtual environment
+
+  ~source ~/workspace/venv/development/bin/activate~
+  after that run the following command
+
+  *hint* install the packages that you use into this venv so you can 
+  get the docs and autocomplete while using emacs.
 
   #+BEGIN_SRC shell
   pip install 'python-language-server[autopep8]'
