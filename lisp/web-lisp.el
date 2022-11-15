@@ -6,7 +6,6 @@
 ;; web mode
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.css?\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.jsx?$" . web-mode))
 
 ;; some configurations to web mode
 ;; (setq web-mode-enable-current-column-highlight t)
@@ -23,11 +22,12 @@
 
 (add-hook 'web-mode-hook  'my-web-mode-hook)
 
-;; jsx highlight
-(setq web-mode-content-types-alist '(("jsx" . "\\.js[x]?\\'")))
 ;; enable emmet-mode with web-mode
 (add-hook 'web-mode-hook  'emmet-mode)
 
 ;; browse url file in browser
 (add-hook 'web-mode-hook
           (lambda () (local-set-key (kbd "C-c C-v") #'browse-url-of-file)))
+
+(provide 'web-lisp)
+;;; web-lisp.el ends here

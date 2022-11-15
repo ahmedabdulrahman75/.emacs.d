@@ -72,7 +72,7 @@
  '(mini-modeline-face-attr '(:background unspecified))
  '(org-src-block-faces 'nil)
  '(package-selected-packages
-   '(php-mode eglot swiper counsel ivy doom-modeline format-all pyvenv switch-window editorconfig typescript-mode js2-mode flycheck markdown-mode company yasnippet yasnippet-snippets which-key web-mode treemacs tide rjsx-mode react-snippets py-autopep8 prettier multiple-cursors mode-icons markdown-preview-mode magit json-mode indent-guide impatient-mode emmet-mode drag-stuff company-web company-quickhelp centaur-tabs all-the-icons))
+   '(flymake-jslint php-mode eglot swiper counsel ivy doom-modeline format-all pyvenv switch-window editorconfig typescript-mode js2-mode flycheck markdown-mode company yasnippet yasnippet-snippets which-key web-mode treemacs tide rjsx-mode react-snippets py-autopep8 prettier multiple-cursors mode-icons markdown-preview-mode magit json-mode indent-guide impatient-mode emmet-mode drag-stuff company-web company-quickhelp centaur-tabs all-the-icons))
  '(pdf-view-midnight-colors '("#ffffff" . "#100f10"))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
