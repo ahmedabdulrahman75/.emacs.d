@@ -6,7 +6,7 @@
 * npm packages required
 
   #+BEGIN_SRC shell
-  sudo npm -g install tern prettier
+  npm -g install tern prettier jslint
   #+END_SRC
 
 * pip packages required
