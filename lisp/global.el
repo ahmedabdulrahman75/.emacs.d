@@ -136,3 +136,9 @@
 
 ;; eglot
 (add-hook 'prog-mode-hook 'eglot-ensure)
+
+;; format-all
+(global-set-key [f4] 'format-all-buffer)
+
+(provide 'global-lisp)
+;;; global-lisp.el ends here

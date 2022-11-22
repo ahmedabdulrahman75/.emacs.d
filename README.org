@@ -51,6 +51,7 @@
   - "C-<" & "C->" mark next and preview like words
   - "C-c C-<" mark all like words
   - "C-c C-v" preview html file in browser
+  - [f4] fromat-all-buffer
     
 * Notes
   prettier is used by *[[https://github.com/lassik/emacs-format-all-the-code][emacs-format-all-the-code]]*
