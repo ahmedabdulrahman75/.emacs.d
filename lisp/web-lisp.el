@@ -15,9 +15,9 @@
   (set (make-local-variable 'company-backends)
        '(company-css company-web-html company-yasnippet company-files))
   (setq web-mode-markup-indent-offset 2) ;; set indentation to 2 spaces
-  (set-face-attribute 'web-mode-html-tag-bracket-face nil :foreground "#757575")
-  (set-face-attribute 'web-mode-html-tag-face nil :foreground "#06356E")
-  (set-face-background 'web-mode-current-element-highlight-face "#A79204")
+  (set-face-attribute 'web-mode-html-tag-bracket-face nil :foreground "#D0CFCC")
+  (set-face-attribute 'web-mode-html-tag-face nil :foreground "#2A7BDE")
+  (set-face-background 'web-mode-current-element-highlight-face "#E9AD0C")
 )
 
 (add-hook 'web-mode-hook  'my-web-mode-hook)
