@@ -1,4 +1,4 @@
-;; requirements 
+;; requirements
 (package-install 'which-key)
 (package-install 'yasnippet)
 (package-install 'company)
@@ -23,6 +23,8 @@
 (package-install 'swiper)
 (package-install 'switch-window)
 (package-install 'eglot)
+(package-install 'eshell-prompt-extras)
+(package-install 'virtualenvwrapper)
 ;; (package-install 'fill-column-indicator)
 ;; (package-install 'idle-highlight-mode)
 
@@ -139,6 +141,14 @@
 
 ;; format-all
 (global-set-key [f4] 'format-all-buffer)
+
+;; eshell-prompt-extras
+(with-eval-after-load "esh-opt"
+  (require 'virtualenvwrapper)
+  (venv-initialize-eshell)
+  (autoload 'epe-theme-lambda "eshell-prompt-extras")
+  (setq eshell-highlight-prompt nil
+        eshell-prompt-function 'epe-theme-lambda))
 
 (provide 'global-lisp)
 ;;; global-lisp.el ends here

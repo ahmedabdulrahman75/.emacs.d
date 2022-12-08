@@ -1,6 +1,6 @@
 * packages required
   #+BEGIN_SRC shell
-  sudo apt install markdown clang-format python-venv
+  sudo apt install markdown clang-format python3-venv nodejs npm
   #+END_SRC
 
 * npm packages required
@@ -10,17 +10,17 @@
   #+END_SRC
 
 * pip packages required
-  create virtual environment at =~/workspace/venv/development/= then activate 
+  create virtual environment at =~/workspace/python/venv/= then activate 
   the created virtual environment
 
-  ~source ~/workspace/venv/development/bin/activate~
+  ~source ~/workspace/python/venv/bin/activate~
   after that run the following command
 
   *hint* install the packages that you use into this venv so you can 
   get the docs and autocomplete while using emacs.
 
   #+BEGIN_SRC shell
-  pip install 'python-language-server[autopep8]'
+  pip install 'python-language-server[autopep8]' virtualenvwrapper
   #+END_SRC
 
 * clone .emacs repo
