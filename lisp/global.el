@@ -1,4 +1,5 @@
 ;; requirements
+(package-install 'exec-path-from-shell)
 (package-install 'which-key)
 (package-install 'yasnippet)
 (package-install 'company)
@@ -25,12 +26,10 @@
 (package-install 'eglot)
 (package-install 'eshell-prompt-extras)
 (package-install 'virtualenvwrapper)
-;; (package-install 'fill-column-indicator)
-;; (package-install 'idle-highlight-mode)
 
-;; ;; fill-column-indicator
-;; (define-globalized-minor-mode my-global-fci-mode fci-mode turn-on-fci-mode)
-;; (my-global-fci-mode 1)
+;; exec-path-from-shell
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
 
 ;; which key mode
 (which-key-mode)
