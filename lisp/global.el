@@ -40,7 +40,7 @@
 ;; some improvement to company mode
 (setq company-minimum-prefix-length 1)
 (setq company-dabbrev-downcase 0)
-(setq company-idle-delay 0)
+(setq company-idle-delay 1)
 
 ;; company quick help
 (company-quickhelp-mode)
