@@ -85,6 +85,9 @@
 (when (display-graphic-p)
   (require 'all-the-icons))
 
+;; doom-modeline
+(doom-modeline-mode 1)
+
 ;;centaur tabs
 (centaur-tabs-mode t)
 (global-set-key (kbd "<C-left>")  'centaur-tabs-backward)
@@ -92,10 +95,31 @@
 (setq centaur-tabs-style "bar")
 (setq centaur-tabs-set-icons t)
 (setq centaur-tabs-show-navigation-buttons t)
-(centaur-tabs-group-by-projectile-project)
+(defun centaur-tabs-hide-tab (x)
+  "Do no to show buffer X in tabs."
+  (let ((name (format "%s" x)))
+    (or
+     ;; Current window is not dedicated window.
+     (window-dedicated-p (selected-window))
 
-;; doom-modeline
-(doom-modeline-mode 1)
+     ;; Buffer name not match below blacklist.
+     (string-prefix-p "*epc" name)
+     (string-prefix-p "*EGLOT" name)
+     (string-prefix-p "*Compile-Log*" name)
+     (string-prefix-p "*company" name)
+     (string-prefix-p "*tramp" name)
+     (string-prefix-p "*Flymake" name)
+     (string-prefix-p "*help" name)
+     (string-prefix-p "*straight" name)
+     (string-prefix-p " *temp" name)
+     (string-prefix-p "*Help" name)
+     (string-prefix-p "*mybuf" name)
+     (string-prefix-p "*Messages" name)
+
+     ;; Is not magit buffer.
+     (and (string-prefix-p "magit" name)
+	  (not (file-name-extension name)))
+     )))
 
 ;; multiple-cursors
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
