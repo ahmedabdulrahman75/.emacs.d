@@ -57,6 +57,7 @@
   prettier is used by *[[https://github.com/lassik/emacs-format-all-the-code][emacs-format-all-the-code]]*
 
 * TODO
+  - [ ] add [[https://github.com/pashky/restclient.el][rest client]] package
   - [ ] find like pyvenv for js
   - [ ] improve docs
     

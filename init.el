@@ -14,12 +14,11 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes") ; theme folder
 (load "~/.emacs.d/general-config") ; general configuration lisp file
 (add-to-list 'load-path "~/.emacs.d/lisp") ; packages configuration file
-(load "global")
-(load "python-lisp")
-(load "javascript-lisp")
-(load "web-lisp")
-(load "php-lisp")
-(load "java-lisp")
+(load "init-global")
+(load "init-python")
+(load "init-javascript")
+(load "init-web")
+(load "init-java")
 ;; (load "sessions-lisp")
 ;; (load "latex-lisp")
 ;;--------------------------------------------------------------------------
@@ -28,7 +27,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(vscode-dark-plus))
+ '(custom-enabled-themes nil)
  '(custom-safe-themes
    '("eabc4781c1d1f4db48bdc99508bb5b31baae6452edcab18aa6de75e6dce01f66" default))
  '(package-selected-packages
