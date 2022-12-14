@@ -1,6 +1,6 @@
 * packages required
   #+BEGIN_SRC shell
-  sudo apt install markdown clang-format python3-venv nodejs npm
+  sudo apt install markdown clang-format python3-venv nodejs npm cmake libtool libtool-bin
   #+END_SRC
 
 * npm packages required

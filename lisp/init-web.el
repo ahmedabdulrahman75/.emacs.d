@@ -35,5 +35,5 @@
 
 ;; indent size css
 
-(provide 'web-lisp)
-;;; web-lisp.el ends here
+(provide 'init-web)
+;;; init-web.el ends here

@@ -24,8 +24,7 @@
 (package-install 'swiper)
 (package-install 'switch-window)
 (package-install 'eglot)
-(package-install 'eshell-prompt-extras)
-(package-install 'virtualenvwrapper)
+(package-install 'vterm)
 
 ;; exec-path-from-shell
 (when (memq window-system '(mac ns x))
@@ -158,20 +157,11 @@
 (global-set-key (kbd "C-x o") 'switch-window)
 (setq switch-window-shortcut-style 'qwerty)
 
-
 ;; eglot
 (add-hook 'prog-mode-hook 'eglot-ensure)
 
 ;; format-all
 (global-set-key [f4] 'format-all-buffer)
 
-;; eshell-prompt-extras
-(with-eval-after-load "esh-opt"
-  (require 'virtualenvwrapper)
-  (venv-initialize-eshell)
-  (autoload 'epe-theme-lambda "eshell-prompt-extras")
-  (setq eshell-highlight-prompt nil
-        eshell-prompt-function 'epe-theme-lambda))
-
-(provide 'global-lisp)
-;;; global-lisp.el ends here
+(provide 'init-global)
+;;; init-global.el ends here

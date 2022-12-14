@@ -28,5 +28,5 @@
 ;; flymake-jslint
 (add-hook 'js-mode-hook 'flymake-jslint-load)
 
-(provide 'javascript-lisp)
-;;; javascript-lisp.el ends here
+(provide 'init-javascript)
+;;; init-javascript.el ends here
