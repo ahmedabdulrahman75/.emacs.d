@@ -25,6 +25,7 @@
 (package-install 'switch-window)
 (package-install 'eglot)
 (package-install 'vterm)
+(package-install 'multi-vterm)
 
 ;; exec-path-from-shell
 (when (memq window-system '(mac ns x))
@@ -162,6 +163,10 @@
 
 ;; format-all
 (global-set-key [f4] 'format-all-buffer)
+
+;; multi-vterm
+;; dedicated terminal height of 30%
+(setq multi-vterm-dedicated-window-height-percent 30)
 
 (provide 'init-global)
 ;;; init-global.el ends here
