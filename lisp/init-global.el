@@ -26,6 +26,8 @@
 (package-install 'eglot)
 (package-install 'vterm)
 (package-install 'multi-vterm)
+(package-install 'ivy-rich)
+(package-install 'all-the-icons-ivy-rich)
 
 ;; exec-path-from-shell
 (when (memq window-system '(mac ns x))
@@ -58,10 +60,6 @@
 ;; Drag Stuff
 (drag-stuff-global-mode 1)
 (drag-stuff-define-keys)
-
-;; ;; flyspell correct helm
-;; (require 'flyspell-correct-helm)
-;; (define-key flyspell-mode-map (kbd "C-;") 'flyspell-correct-wrapper)
 
 
 ;; enable yasnippet with company mode
@@ -167,6 +165,13 @@
 ;; multi-vterm
 ;; dedicated terminal height of 30%
 (setq multi-vterm-dedicated-window-height-percent 30)
+
+
+;; all-the-icons-ivy-rich
+(all-the-icons-ivy-rich-mode 1) ;; should be enables before ivy-rich
+
+;;ivy-rich
+(ivy-rich-mode 1)
 
 (provide 'init-global)
 ;;; init-global.el ends here

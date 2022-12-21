@@ -31,7 +31,7 @@
  '(custom-safe-themes
    '("eabc4781c1d1f4db48bdc99508bb5b31baae6452edcab18aa6de75e6dce01f66" default))
  '(package-selected-packages
-   '(multi-vterm vterm js2-mode swiper ivy markdown-mode company yasnippet yasnippet-snippets which-key web-mode virtualenvwrapper typescript-mode treemacs switch-window rjsx-mode react-snippets pyvenv py-autopep8 php-mode multiple-cursors mode-icons markdown-preview-mode magit json-mode indent-guide impatient-mode format-all flymake-jslint exec-path-from-shell eshell-prompt-extras emmet-mode eglot editorconfig drag-stuff doom-modeline counsel company-web company-quickhelp centaur-tabs all-the-icons)))
+   '(ivy-rich multi-vterm vterm js2-mode swiper ivy markdown-mode company yasnippet yasnippet-snippets which-key web-mode virtualenvwrapper typescript-mode treemacs switch-window rjsx-mode react-snippets pyvenv py-autopep8 php-mode multiple-cursors mode-icons markdown-preview-mode magit json-mode indent-guide impatient-mode format-all flymake-jslint exec-path-from-shell eshell-prompt-extras emmet-mode eglot editorconfig drag-stuff doom-modeline counsel company-web company-quickhelp centaur-tabs all-the-icons)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
