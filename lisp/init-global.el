@@ -28,6 +28,7 @@
 (package-install 'multi-vterm)
 (package-install 'ivy-rich)
 (package-install 'all-the-icons-ivy-rich)
+(package-install 'vscode-dark-plus-theme)
 
 ;; exec-path-from-shell
 (when (memq window-system '(mac ns x))
@@ -162,16 +163,14 @@
 ;; format-all
 (global-set-key [f4] 'format-all-buffer)
 
-;; multi-vterm
-;; dedicated terminal height of 30%
-(setq multi-vterm-dedicated-window-height-percent 30)
-
-
 ;; all-the-icons-ivy-rich
-(all-the-icons-ivy-rich-mode 1) ;; should be enables before ivy-rich
+(all-the-icons-ivy-rich-mode 1)
 
 ;;ivy-rich
 (ivy-rich-mode 1)
+
+;;vscode-dark-plus-theme
+(load-theme 'vscode-dark-plus t)
 
 (provide 'init-global)
 ;;; init-global.el ends here
