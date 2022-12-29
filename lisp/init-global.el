@@ -28,7 +28,6 @@
 (package-install 'multi-vterm)
 (package-install 'ivy-rich)
 (package-install 'all-the-icons-ivy-rich)
-(package-install 'vscode-dark-plus-theme)
 
 ;; exec-path-from-shell
 (when (memq window-system '(mac ns x))
@@ -92,6 +91,8 @@
 (global-set-key (kbd "<C-left>")  'centaur-tabs-backward)
 (global-set-key (kbd "<C-right>") 'centaur-tabs-forward)
 (setq centaur-tabs-style "bar")
+(setq centaur-tabs-set-bar 'under)
+(setq x-underline-at-descent-line t)
 (setq centaur-tabs-set-icons t)
 (setq centaur-tabs-show-navigation-buttons t)
 (defun centaur-tabs-hide-tab (x)
@@ -114,7 +115,8 @@
      (string-prefix-p "*Help" name)
      (string-prefix-p "*mybuf" name)
      (string-prefix-p "*Messages" name)
-
+     (string-prefix-p "*format-all-errors*" name)
+     
      ;; Is not magit buffer.
      (and (string-prefix-p "magit" name)
 	  (not (file-name-extension name)))
@@ -168,9 +170,6 @@
 
 ;;ivy-rich
 (ivy-rich-mode 1)
-
-;;vscode-dark-plus-theme
-(load-theme 'vscode-dark-plus t)
 
 (provide 'init-global)
 ;;; init-global.el ends here
