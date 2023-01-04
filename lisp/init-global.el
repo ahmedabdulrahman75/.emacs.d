@@ -28,6 +28,7 @@
 (package-install 'multi-vterm)
 (package-install 'ivy-rich)
 (package-install 'all-the-icons-ivy-rich)
+(package-install 'smex)
 
 ;; exec-path-from-shell
 (when (memq window-system '(mac ns x))
@@ -130,6 +131,9 @@
 ;; editorconfig
 (editorconfig-mode 1)
 
+;; enable smex
+(smex-initialize)
+
 ;; ivy
 (ivy-mode)
 (setq ivy-use-virtual-buffers t)
@@ -173,3 +177,4 @@
 
 (provide 'init-global)
 ;;; init-global.el ends here
+

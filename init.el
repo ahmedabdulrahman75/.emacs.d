@@ -21,3 +21,16 @@
 ;; (load "sessions-lisp")
 ;; (load "latex-lisp")
 ;;--------------------------------------------------------------------------
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   '(smex flymake-eslint js2-mode ivy-rich vterm swiper ivy all-the-icons markdown-mode company yasnippet yasnippet-snippets which-key web-mode vscode-dark-plus-theme virtualenvwrapper typescript-mode treemacs switch-window rjsx-mode react-snippets pyvenv py-autopep8 php-mode multiple-cursors multi-vterm mode-icons markdown-preview-mode magit json-mode indent-guide impatient-mode format-all flymake-jslint exec-path-from-shell eslint-fix eshell-prompt-extras emmet-mode eglot editorconfig drag-stuff doom-modeline counsel company-web company-quickhelp centaur-tabs all-the-icons-ivy-rich)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

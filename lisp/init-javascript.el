@@ -3,7 +3,7 @@
 (package-install 'react-snippets)
 (package-install 'json-mode)
 (package-install 'typescript-mode)
-(package-install 'flymake-jslint)
+(package-install 'flymake-eslint)
 (package-install 'rjsx-mode)
 
 ;; js2-mode
@@ -25,8 +25,10 @@
                                    (setq typescript-indent-level 2)))
 
 
-;; flymake-jslint
-(add-hook 'js-mode-hook 'flymake-jslint-load)
+;; flymake-eslint
+(add-hook 'js-mode-hook
+  (lambda ()
+    (flymake-eslint-enable)))
 
 (provide 'init-javascript)
 ;;; init-javascript.el ends here
