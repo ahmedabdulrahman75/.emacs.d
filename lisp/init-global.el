@@ -29,6 +29,7 @@
 (package-install 'ivy-rich)
 (package-install 'all-the-icons-ivy-rich)
 (package-install 'smex)
+(package-install 'dotenv-mode)
 
 ;; exec-path-from-shell
 (when (memq window-system '(mac ns x))
@@ -53,10 +54,6 @@
 
 ;; yasnippet
 (yas-global-mode 1)
-
-;; ;; idle highlight mode
-;; (add-hook 'prog-mode-hook (lambda () (idle-highlight-mode t)))
-
 
 ;; Drag Stuff
 (drag-stuff-global-mode 1)
@@ -172,9 +169,11 @@
 ;; all-the-icons-ivy-rich
 (all-the-icons-ivy-rich-mode 1)
 
-;;ivy-rich
+;; ivy-rich
 (ivy-rich-mode 1)
+
+;; dotenv mode
+(add-to-list 'auto-mode-alist '("\\.env\\..*\\'" . dotenv-mode))
 
 (provide 'init-global)
 ;;; init-global.el ends here
-

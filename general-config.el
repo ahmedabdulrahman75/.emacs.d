@@ -79,3 +79,6 @@
 
 ;; flymake
 (add-hook 'prog-mode-hook 'flymake-mode)
+
+;; recentf-mode
+(recentf-mode 1)

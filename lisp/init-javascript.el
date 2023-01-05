@@ -16,19 +16,19 @@
 ;; rjsx-mode
 (add-to-list 'auto-mode-alist '("components\\/.*\\.js\\'" . rjsx-mode))
 
-(setq js-indent-level 2)
 
 (add-hook 'typescript-mode-hook '(lambda ()
                                    (setq typescript-indent-level 2)))
 
-(add-hook 'javascript-mode-hook '(lambda ()
-                                   (setq typescript-indent-level 2)))
-
+(add-hook 'js2-mode-hook '(lambda ()
+                            (setq js-indent-level 2)))
 
 ;; flymake-eslint
-(add-hook 'js-mode-hook
-  (lambda ()
-    (flymake-eslint-enable)))
+(add-hook 'js2-mode-hook '(lambda ()
+                            (flymake-eslint-enable)))
+
+(add-hook 'typescript-mode-hook '(lambda ()
+                                   (flymake-eslint-enable)))
 
 (provide 'init-javascript)
 ;;; init-javascript.el ends here
