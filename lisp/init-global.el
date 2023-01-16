@@ -30,6 +30,7 @@
 (package-install 'all-the-icons-ivy-rich)
 (package-install 'smex)
 (package-install 'dotenv-mode)
+(package-install 'auctex)
 
 ;; exec-path-from-shell
 (when (memq window-system '(mac ns x))
@@ -114,7 +115,7 @@
      (string-prefix-p "*mybuf" name)
      (string-prefix-p "*Messages" name)
      (string-prefix-p "*format-all-errors*" name)
-     
+     (string-prefix-p "*scratch*" name)
      ;; Is not magit buffer.
      (and (string-prefix-p "magit" name)
 	  (not (file-name-extension name)))

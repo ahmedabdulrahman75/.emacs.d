@@ -27,6 +27,10 @@
 (add-hook 'js2-mode-hook '(lambda ()
                             (flymake-eslint-enable)))
 
+(add-hook 'rjsx-mode-hook '(lambda ()
+                            (flymake-eslint-enable)))
+
+
 (add-hook 'typescript-mode-hook '(lambda ()
                                    (flymake-eslint-enable)))
 
