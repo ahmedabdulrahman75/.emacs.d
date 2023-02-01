@@ -82,3 +82,6 @@
 
 ;; recentf-mode
 (recentf-mode 1)
+
+;; make ibuffer default
+(defalias 'list-buffers 'ibuffer)
