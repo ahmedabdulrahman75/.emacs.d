@@ -34,5 +34,23 @@
 (add-hook 'typescript-mode-hook '(lambda ()
                                    (flymake-eslint-enable)))
 
+;; add-node-modules-path
+(with-eval-after-load 'js-mode
+  '(add-hook 'js-mode-hook #'add-node-modules-path))
+
+(with-eval-after-load 'js2-mode
+  (add-hook 'eglot-managed-mode-hook '(lambda ()
+                                        (flymake-eslint-enable))))
+
+;; angular lsp config with eglot temporary configurations
+;; (require 'eglot)
+;; (add-to-list 'eglot-server-programs
+;;              '(html-mode "node"
+;;                          "./node_modules/@angular/language-server"
+;;                          "--ngProbeLocations"
+;;                          "./node_modules"
+;;                          "--tsProbeLocations"
+;;                          "./node_modules"
+;;                          "--stdio"))
 (provide 'init-javascript)
 ;;; init-javascript.el ends here
