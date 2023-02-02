@@ -18,6 +18,7 @@
 (load "init-javascript")
 (load "init-web")
 (load "init-java")
+(load "init-tailwindcss")
 ;; (load "sessions-lisp")
 ;; (load "latex-lisp")
 ;;--------------------------------------------------------------------------

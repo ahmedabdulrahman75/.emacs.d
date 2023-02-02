@@ -53,6 +53,8 @@
 
 ;; company quick help
 (company-quickhelp-mode)
+(setq company-quickhelp-color-background "#303030")
+(setq company-quickhelp-color-foreground "#D0CFCC")
 
 ;; treemacs
 (global-set-key [f8] 'treemacs)
