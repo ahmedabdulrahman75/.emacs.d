@@ -31,10 +31,9 @@
 (package-install 'smex)
 (package-install 'dotenv-mode)
 (package-install 'auctex)
-(package-install 'vscode-dark-plus-theme)
 
-;; vs-code dark theme
-(load-theme 'vscode-dark-plus t)
+;; adwaita default theme
+(load-theme 'adwaita)
 
 ;; exec-path-from-shell
 (when (memq window-system '(mac ns x))
