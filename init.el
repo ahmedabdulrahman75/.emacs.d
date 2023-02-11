@@ -14,11 +14,11 @@
 (load "~/.emacs.d/general-config") ; general configuration lisp file
 (add-to-list 'load-path "~/.emacs.d/lisp") ; packages configuration file
 (load "init-global")
+(load "init-eglot")
 (load "init-python")
 (load "init-javascript")
 (load "init-web")
 (load "init-java")
-(load "init-tailwindcss")
 ;; (load "sessions-lisp")
 ;; (load "latex-lisp")
 ;;--------------------------------------------------------------------------

@@ -23,7 +23,6 @@
 (package-install 'counsel)
 (package-install 'swiper)
 (package-install 'switch-window)
-(package-install 'eglot)
 (package-install 'vterm)
 (package-install 'multi-vterm)
 (package-install 'ivy-rich)
@@ -31,9 +30,10 @@
 (package-install 'smex)
 (package-install 'dotenv-mode)
 (package-install 'auctex)
+(package-install 'vscode-dark-plus-theme)
 
-;; adwaita default theme
-(load-theme 'adwaita)
+;; vs-code dark theme
+(load-theme 'vscode-dark-plus t)
 
 ;; exec-path-from-shell
 (when (memq window-system '(mac ns x))
@@ -48,7 +48,7 @@
 ;; some improvement to company mode
 (setq company-minimum-prefix-length 1)
 (setq company-dabbrev-downcase 0)
-(setq company-idle-delay 1)
+(setq company-idle-delay 0.7)
 
 ;; company quick help
 (company-quickhelp-mode)
@@ -165,9 +165,6 @@
 ;; switch-window
 (global-set-key (kbd "C-x o") 'switch-window)
 (setq switch-window-shortcut-style 'qwerty)
-
-;; eglot
-(add-hook 'prog-mode-hook 'eglot-ensure)
 
 ;; format-all
 (global-set-key [f4] 'format-all-buffer)

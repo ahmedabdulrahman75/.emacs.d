@@ -19,9 +19,9 @@
   (setq web-mode-markup-indent-offset 2) ;; 2 spaces indentation HTML
   (setq web-mode-css-indent-offset 2)  ;; 2 spaces indentation css
   (setq web-mode-code-indent-offset 2) ;; 2 spaces indentation php
-  (set-face-attribute 'web-mode-html-tag-bracket-face nil :foreground "#757575")
-  (set-face-attribute 'web-mode-html-tag-face nil :foreground "#06356E")
-  (set-face-background 'web-mode-current-element-highlight-face "#A79204")
+  (set-face-attribute 'web-mode-html-tag-bracket-face nil :foreground "#D0CFCC")
+  (set-face-attribute 'web-mode-html-tag-face nil :foreground "#2A7BDE")
+  (set-face-background 'web-mode-current-element-highlight-face "#E9AD0C")
 )
 
 (add-hook 'web-mode-hook  'my-web-mode-hook)
@@ -33,7 +33,19 @@
 (add-hook 'web-mode-hook
           (lambda () (local-set-key (kbd "C-c C-v") #'browse-url-of-file)))
 
-;; indent size css
+;; elgot config
+(with-eval-after-load 'eglot
+  (add-to-list 'eglot-server-programs
+               '((web-mode :language-id "html")
+                 .
+                 ("vscode-html-language-server" "--stdio"))))
+
+(with-eval-after-load 'eglot
+  (add-to-list 'eglot-server-programs
+               '((web-mode :language-id "css")
+                 .
+                 ("vscode-css-language-server" "--stdio"))))
 
 (provide 'init-web)
 ;;; init-web.el ends here
+

@@ -69,13 +69,11 @@
 (add-hook 'prog-mode-hook #'hs-minor-mode)
 (global-set-key (kbd "C-c C-f") 'hs-toggle-hiding)
 
-
 ;; space instead of tabs
 (setq-default indent-tabs-mode nil)
 
 ;; enable column indicator in prog-mode
 (add-hook 'prog-mode-hook #'display-fill-column-indicator-mode)
-
 
 ;; flymake
 (add-hook 'prog-mode-hook 'flymake-mode)
