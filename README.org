@@ -63,3 +63,6 @@
   - [ ] improve docs
     
     
+* Reference
+  this is a list of helpful references
+  - [[https://explog.in/dot/emacs/config.html][explog]]

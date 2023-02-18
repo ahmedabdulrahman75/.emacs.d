@@ -13,7 +13,6 @@
 ;; don't accelerate scrolling
 (setq mouse-wheel-progressive-speed nil)
 
-
 ;; Delete selection mode
 (delete-selection-mode 1)
 
@@ -32,7 +31,7 @@
 (show-paren-mode t)
 
 ;; change the highlight color
-;; (set-face-attribute 'region nil :background "#99C4F7")
+(set-face-attribute 'region nil :background "#99C4F7")
 
 ;; ;; right to left config
 ;; (defun set-bidi-env ()
