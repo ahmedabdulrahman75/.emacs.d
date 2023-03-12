@@ -47,12 +47,13 @@
     #+BEGIN_QUOTE
     (same shortcut works with web-mode but it's the default shortcut in webmode)
     #+END_QUOTE
-  - "<C-right>" & "<C-left>" centaur-tabs forward and backward
+  - "C-}" & "C-}" centaur-tabs forward and backward
   - "C-<" & "C->" mark next and preview like words
   - "C-c C-<" mark all like words
   - "C-c C-v" preview html file in browser
   - [f4] fromat-all-buffer
   - "C-'" for company complete
+  - "C-S-i" formate buffer
     
 * Notes
   prettier is used by *[[https://github.com/lassik/emacs-format-all-the-code][emacs-format-all-the-code]]*

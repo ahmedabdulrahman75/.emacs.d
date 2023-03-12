@@ -92,8 +92,8 @@
 
 ;;centaur tabs
 (centaur-tabs-mode t)
-(global-set-key (kbd "<C-left>")  'centaur-tabs-backward)
-(global-set-key (kbd "<C-right>") 'centaur-tabs-forward)
+(global-set-key (kbd "C-{")  'centaur-tabs-backward)
+(global-set-key (kbd "C-}") 'centaur-tabs-forward)
 (setq centaur-tabs-style "bar")
 (setq centaur-tabs-set-bar 'under)
 (setq x-underline-at-descent-line t)
@@ -167,7 +167,7 @@
 (setq switch-window-shortcut-style 'qwerty)
 
 ;; format-all
-(global-set-key [f4] 'format-all-buffer)
+(global-set-key (kbd "C-S-i") 'format-all-buffer)
 
 ;; all-the-icons-ivy-rich
 (all-the-icons-ivy-rich-mode 1)
