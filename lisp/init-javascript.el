@@ -5,12 +5,12 @@
 (package-install 'typescript-mode)
 (package-install 'flymake-eslint)
 (package-install 'rjsx-mode)
-(package-install 'ng2-mode)
 (package-install 'eslint-fix)
 
 ;; add-node-modules-path
 (with-eval-after-load 'js-mode
   '(add-hook 'js-mode-hook #'add-node-modules-path))
+
 
 ;; js2-mode
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))

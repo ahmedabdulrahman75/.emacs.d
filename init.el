@@ -19,7 +19,7 @@
 (load "init-javascript")
 (load "init-web")
 (load "init-java")
-;; (load "init-angular")
+(load "init-angular")
 ;; (load "sessions-lisp")
 ;; (load "latex-lisp")
 ;;--------------------------------------------------------------------------
