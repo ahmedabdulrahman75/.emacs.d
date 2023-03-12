@@ -5,6 +5,8 @@
 (package-install 'typescript-mode)
 (package-install 'flymake-eslint)
 (package-install 'rjsx-mode)
+(package-install 'ng2-mode)
+(package-install 'eslint-fix)
 
 ;; add-node-modules-path
 (with-eval-after-load 'js-mode

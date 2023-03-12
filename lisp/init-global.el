@@ -30,6 +30,10 @@
 (package-install 'smex)
 (package-install 'dotenv-mode)
 (package-install 'auctex)
+(package-install 'vscode-dark-plus-theme)
+
+;;vscode-dark-plus-theme
+(load-theme 'vscode-dark-plus t)
 
 ;; exec-path-from-shell
 (when (memq window-system '(mac ns x))
@@ -40,7 +44,7 @@
 
 ;; company mode
 (add-hook 'after-init-hook 'global-company-mode)
-(global-set-key (kbd "C-<tab>") 'company-complete) ; show completion suggestions by using tab key
+(global-set-key (kbd "C-'") 'company-complete) ; show completion suggestions by using tab key
 ;; some improvement to company mode
 (setq company-minimum-prefix-length 1)
 (setq company-dabbrev-downcase 0)
@@ -48,8 +52,8 @@
 
 ;; company quick help
 (company-quickhelp-mode)
-;; (setq company-quickhelp-color-background "#303030")
-;; (setq company-quickhelp-color-foreground "#D0CFCC")
+(setq company-quickhelp-color-background "#303030")
+(setq company-quickhelp-color-foreground "#D0CFCC")
 
 ;; treemacs
 (global-set-key [f8] 'treemacs)
