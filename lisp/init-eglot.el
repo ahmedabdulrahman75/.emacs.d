@@ -4,7 +4,7 @@
 
 ;; eglot
 (add-hook 'prog-mode-hook 'eglot-ensure)
-
+(setq eglot-confirm-server-initiated-edits nil)
 
 (provide 'init-eglot)
 ;;; init-eglot.el ends here
