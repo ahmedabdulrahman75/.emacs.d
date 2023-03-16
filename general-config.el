@@ -17,7 +17,7 @@
 (delete-selection-mode 1)
 
 ;; enable spell check by default
-(add-hook 'text-mode-hook 'flyspell-mode)
+;; (add-hook 'text-mode-hook 'flyspell-mode)
 ;; (add-hook 'prog-mode-hook 'flyspell-prog-mode)
 
 ;; auto refresh all buffers
@@ -42,7 +42,7 @@
 ;; electric pair
 (electric-pair-mode 1)
 
-;;Window Move
+;; Window Move
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings))
 
