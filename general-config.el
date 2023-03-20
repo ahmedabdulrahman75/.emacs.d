@@ -17,8 +17,8 @@
 (delete-selection-mode 1)
 
 ;; enable spell check by default
-;; (add-hook 'text-mode-hook 'flyspell-mode)
-;; (add-hook 'prog-mode-hook 'flyspell-prog-mode)
+(add-hook 'text-mode-hook 'flyspell-mode)
+(add-hook 'prog-mode-hook 'flyspell-prog-mode)
 
 ;; auto refresh all buffers
 (global-auto-revert-mode 1)

@@ -1,6 +1,7 @@
 (package-install 'ng2-mode)
 
 (add-to-list 'auto-mode-alist '("\\.component.html\\'" . ng2-mode))
+(add-hook 'ng2-html-mode-hook  'emmet-mode)
 
 (defun angularServerPath()
   (concat
