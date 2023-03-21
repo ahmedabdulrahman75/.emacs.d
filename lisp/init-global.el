@@ -30,10 +30,8 @@
 (package-install 'smex)
 (package-install 'dotenv-mode)
 (package-install 'auctex)
-(package-install 'vscode-dark-plus-theme)
-
-;;vscode-dark-plus-theme
-(load-theme 'vscode-dark-plus t)
+(package-install 'restclient)
+(package-install 'company-restclient)
 
 ;; exec-path-from-shell
 (when (memq window-system '(mac ns x))
@@ -52,8 +50,8 @@
 
 ;; company quick help
 (company-quickhelp-mode)
-(setq company-quickhelp-color-background "#303030")
-(setq company-quickhelp-color-foreground "#D0CFCC")
+;; (setq company-quickhelp-color-background "#303030")
+;; (setq company-quickhelp-color-foreground "#D0CFCC")
 
 ;; treemacs
 (global-set-key [f8] 'treemacs)
@@ -75,6 +73,10 @@
 ;; See http://www.gnu.org/software/emacs/manual/html_node/emacs/Hooks.html
 ;; for what this line means
 (add-hook 'after-change-major-mode-hook 'autocomplete-show-snippets)
+
+
+;; company restclient
+(add-to-list 'company-backends 'company-restclient)
 
 ;; indent guide
 (indent-guide-global-mode)
