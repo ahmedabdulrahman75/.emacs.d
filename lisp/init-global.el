@@ -1,38 +1,3 @@
-;; requirements
-(package-install 'exec-path-from-shell)
-(package-install 'which-key)
-(package-install 'yasnippet)
-(package-install 'company)
-(package-install 'company-quickhelp)
-(package-install 'markdown-mode)
-(package-install 'markdown-preview-mode)
-(package-install 'impatient-mode)
-(package-install 'treemacs)
-(package-install 'yasnippet-snippets)
-(package-install 'drag-stuff)
-(package-install 'indent-guide)
-(package-install 'format-all)
-(package-install 'mode-icons)
-(package-install 'all-the-icons)
-(package-install 'centaur-tabs)
-(package-install 'doom-modeline)
-(package-install 'magit)
-(package-install 'multiple-cursors)
-(package-install 'editorconfig)
-(package-install 'ivy)
-(package-install 'counsel)
-(package-install 'swiper)
-(package-install 'switch-window)
-(package-install 'vterm)
-(package-install 'multi-vterm)
-(package-install 'ivy-rich)
-(package-install 'all-the-icons-ivy-rich)
-(package-install 'smex)
-(package-install 'dotenv-mode)
-(package-install 'auctex)
-(package-install 'restclient)
-(package-install 'company-restclient)
-
 ;; exec-path-from-shell
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
@@ -54,7 +19,23 @@
 ;; (setq company-quickhelp-color-foreground "#D0CFCC")
 
 ;; treemacs
-(global-set-key [f8] 'treemacs)
+(use-package treemacs
+  :ensure t
+  :defer t
+  :init
+  (with-eval-after-load 'winum
+    (define-key winum-keymap (kbd "M-0") #'treemacs-select-window))
+  :config
+  (progn
+    (setq treemacs-indentation  1)
+    (treemacs-indent-guide-mode t))
+  :bind
+  (("M-0" . treemacs-select-window)))
+
+(use-package treemacs-magit
+  :after (treemacs magit)
+  :ensure t)
+
 
 ;; yasnippet
 (yas-global-mode 1)
@@ -123,6 +104,7 @@
      (string-prefix-p "*Messages" name)
      (string-prefix-p "*format-all-errors*" name)
      (string-prefix-p "*scratch*" name)
+     (string-prefix-p "*Warnings*" name)
      ;; Is not magit buffer.
      (and (string-prefix-p "magit" name)
 	  (not (file-name-extension name)))
@@ -135,9 +117,6 @@
 
 ;; editorconfig
 (editorconfig-mode 1)
-
-;; enable smex
-(smex-initialize)
 
 ;; ivy
 (ivy-mode)
@@ -179,6 +158,12 @@
 
 ;; dotenv mode
 (add-to-list 'auto-mode-alist '("\\.env\\..*\\'" . dotenv-mode))
+
+;; restart emacs
+(use-package restart-emacs
+  :init
+  (setq restart-emacs-restore-frames t))
+
 
 (provide 'init-global)
 ;;; init-global.el ends here

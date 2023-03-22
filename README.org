@@ -42,7 +42,7 @@
   #+END_SRC
 
 * Keyboard shortcuts
-  - [f8] for treemacs
+  - "M-0" for treemacs
   - "C-c C-f" hs-toggle-hide 
     #+BEGIN_QUOTE
     (same shortcut works with web-mode but it's the default shortcut in webmode)
@@ -59,12 +59,13 @@
   prettier is used by *[[https://github.com/lassik/emacs-format-all-the-code][emacs-format-all-the-code]]*
 
 * TODO
-  - [ ] import integration of eglot and eslint
-  - [ ] add [[https://github.com/pashky/restclient.el][rest client]] & [[https://github.com/iquiw/company-restclient][company restclient]] package
+  - [X] import integration of eglot and eslint
+  - [X] add [[https://github.com/pashky/restclient.el][rest client]] & [[https://github.com/iquiw/company-restclient][company restclient]] package
   - [X] find like pyvenv for js
   - [ ] improve docs
+  - [ ] add [[https://github.com/bbatsov/projectile][projectile]] package
     
     
-* Reference
+* Referencein
   this is a list of helpful references
   - [[https://explog.in/dot/emacs/config.html][explog]]
