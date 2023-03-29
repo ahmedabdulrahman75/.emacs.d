@@ -1,3 +1,9 @@
+;; vscode dark them
+(use-package vscode-dark-plus-theme
+  :ensure t
+  :config
+  (load-theme 'vscode-dark-plus t))
+
 ;; exec-path-from-shell
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
@@ -11,12 +17,12 @@
 ;; some improvement to company mode
 (setq company-minimum-prefix-length 1)
 (setq company-dabbrev-downcase 0)
-(setq company-idle-delay 0.5)
+(setq company-idle-delay 0.7)
 
 ;; company quick help
 (company-quickhelp-mode)
-;; (setq company-quickhelp-color-background "#303030")
-;; (setq company-quickhelp-color-foreground "#D0CFCC")
+(setq company-quickhelp-color-background "#303030")
+(setq company-quickhelp-color-foreground "#D0CFCC")
 
 ;; treemacs
 (use-package treemacs
@@ -164,6 +170,10 @@
   :init
   (setq restart-emacs-restore-frames t))
 
+(use-package dashboard
+  :ensure t
+  :config
+  (dashboard-setup-startup-hook))
 
 (provide 'init-global)
 ;;; init-global.el ends here

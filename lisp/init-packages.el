@@ -23,6 +23,7 @@
 (package-install 'ivy)
 (package-install 'counsel)
 (package-install 'swiper)
+(package-install 'smex)
 (package-install 'switch-window)
 (package-install 'vterm)
 (package-install 'multi-vterm)
@@ -37,6 +38,8 @@
 (package-install 'eglot)
 (package-install 'consult-eglot)
 (package-install 'restart-emacs)
+(package-install 'dashboard)
+(package-install 'vscode-dark-plus-theme)
 ;; (package-install 'projectile)
 
 (provide 'init-packages)
