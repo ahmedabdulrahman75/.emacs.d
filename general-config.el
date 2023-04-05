@@ -82,3 +82,6 @@
 
 ;; make ibuffer default
 (defalias 'list-buffers 'ibuffer)
+
+;; highlight current line
+(global-hl-line-mode 1)
