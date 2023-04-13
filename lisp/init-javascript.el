@@ -22,6 +22,8 @@
 ;; rjsx-mode
 (add-to-list 'auto-mode-alist '("components\\/.*\\.js\\'" . rjsx-mode))
 
+;; Typescript
+(add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-mode))
 
 
 ;; indentation level

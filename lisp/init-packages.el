@@ -39,7 +39,6 @@
 (package-install 'consult-eglot)
 (package-install 'restart-emacs)
 (package-install 'dashboard)
-(package-install 'vscode-dark-plus-theme)
 ;; (package-install 'projectile)
 
 (provide 'init-packages)
