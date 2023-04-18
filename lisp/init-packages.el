@@ -39,6 +39,7 @@
 (package-install 'consult-eglot)
 (package-install 'restart-emacs)
 (package-install 'dashboard)
+(package-install 'org-preview-html)
 ;; (package-install 'projectile)
 
 (provide 'init-packages)

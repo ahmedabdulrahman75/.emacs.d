@@ -1,3 +1,4 @@
+#+OPTIONS: \n:t
 * packages required
   #+BEGIN_SRC shell
   sudo apt install markdown clang-format python3-venv nodejs npm cmake libtool libtool-bin
@@ -56,7 +57,9 @@
   - "C-S-i" formate buffer
     
 * Notes
-  prettier is used by *[[https://github.com/lassik/emacs-format-all-the-code][emacs-format-all-the-code]]*
+  - prettier is used by *[[https://github.com/lassik/emacs-format-all-the-code][emacs-format-all-the-code]]*
+  
+  - to preserve break add ~#+OPTIONS: \n:t~ to the top of org file
 
 * TODO
   - [X] import integration of eglot and eslint

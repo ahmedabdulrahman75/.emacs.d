@@ -85,3 +85,4 @@
 
 ;; highlight current line
 (global-hl-line-mode 1)
+;; (set-face-background 'hl-line "#C2D5E9")
