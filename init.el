@@ -22,6 +22,7 @@
 (load "init-java")
 (load "init-angular")
 (load "init-org")
+(load "init-yaml")
 ;; (load "sessions-lisp")
 ;; (load "latex-lisp")
 ;;--------------------------------------------------------------------------
