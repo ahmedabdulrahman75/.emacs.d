@@ -3,7 +3,7 @@
 (package-install 'pyvenv)
 
 ;; py-autopep8
-(add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
+;; (add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
 
 ;; pyvenv 
 (pyvenv-activate "~/workspace/python/venv/")

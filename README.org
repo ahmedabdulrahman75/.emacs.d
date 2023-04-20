@@ -7,7 +7,7 @@
 * npm packages required
 
   #+BEGIN_SRC shell
-  npm -g install prettier eslint vscode-langservers-extracted typescript-language-server typescript @angular/language-server
+  npm -g install prettier eslint vscode-langservers-extracted typescript-language-server typescript @angular/language-server yaml-language-server
   #+END_SRC
 
 * pip packages required
@@ -62,13 +62,9 @@
   - to preserve break add ~#+OPTIONS: \n:t~ to the top of org file
 
 * TODO
-  - [X] import integration of eglot and eslint
-  - [X] add [[https://github.com/pashky/restclient.el][rest client]] & [[https://github.com/iquiw/company-restclient][company restclient]] package
-  - [X] find like pyvenv for js
   - [ ] improve docs
   - [ ] add [[https://github.com/bbatsov/projectile][projectile]] package
     
-    
-* Referencein
+* References
   this is a list of helpful references
   - [[https://explog.in/dot/emacs/config.html][explog]]
