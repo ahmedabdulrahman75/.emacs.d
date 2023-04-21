@@ -43,7 +43,8 @@
   #+END_SRC
 
 * Keyboard shortcuts
-  - "M-0" for treemacs
+  - [f8] toggle treemacs
+  - "M-0" toggle treemacs and switch between treemacs and open buffers
   - "C-c C-f" hs-toggle-hide 
     #+BEGIN_QUOTE
     (same shortcut works with web-mode but it's the default shortcut in webmode)
