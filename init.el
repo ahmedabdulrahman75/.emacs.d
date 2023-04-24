@@ -11,7 +11,7 @@
 ;;--------------------------------------------------------------------------
 ;; loading files
 ;;--------------------------------------------------------------------------
-(load "~/.emacs.d/general-config") ; general configuration lisp file
+(load "~/.emacs.d/custom-config") ; general configuration lisp file
 (add-to-list 'load-path "~/.emacs.d/lisp") ; packages configuration file
 (load "init-packages")
 (load "init-global")
