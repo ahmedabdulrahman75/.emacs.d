@@ -40,7 +40,6 @@
 (package-install 'restart-emacs)
 (package-install 'dashboard)
 (package-install 'yaml-mode)
-(package-install 'vscode-dark-plus-theme)
 (package-install 'ob-typescript)
 ;; (package-install 'projectile)
 
