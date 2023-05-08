@@ -106,6 +106,7 @@
      (string-prefix-p "*format-all-errors*" name)
      (string-prefix-p "*scratch*" name)
      (string-prefix-p "*Warnings*" name)
+     (string-prefix-p "Treemacs Update Single File Process" name)
      ;; Is not magit buffer.
      (and (string-prefix-p "magit" name)
 	  (not (file-name-extension name)))
@@ -159,11 +160,6 @@
 
 ;; dotenv mode
 (add-to-list 'auto-mode-alist '("\\.env\\..*\\'" . dotenv-mode))
-
-;; restart emacs
-(use-package restart-emacs
-  :init
-  (setq restart-emacs-restore-frames t))
 
 (use-package dashboard
   :ensure t

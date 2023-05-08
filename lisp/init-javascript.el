@@ -37,13 +37,13 @@
 
 
 ;; flymake-eslint
-(defun flymake-eslint-eglot-hook ()
-  (add-hook 'eglot-managed-mode-hook
-            '(lambda ()
-               (flymake-eslint-enable))))
+;; (defun flymake-eslint-eglot-hook ()
+;;   (add-hook 'eglot-managed-mode-hook
+;;             '(lambda ()
+;;                (flymake-eslint-enable))))
 
-(with-eval-after-load 'js2-mode (flymake-eslint-eglot-hook))
-(with-eval-after-load 'typescript-mode (flymake-eslint-eglot-hook))
+;; (with-eval-after-load 'js2-mode (flymake-eslint-eglot-hook))
+;; (with-eval-after-load 'typescript-mode (flymake-eslint-eglot-hook))
 
 
 (provide 'init-javascript)

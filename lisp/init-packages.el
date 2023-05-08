@@ -37,7 +37,6 @@
 (package-install 'treemacs-magit)
 (package-install 'eglot)
 (package-install 'consult-eglot)
-(package-install 'restart-emacs)
 (package-install 'dashboard)
 (package-install 'yaml-mode)
 (package-install 'ob-typescript)
