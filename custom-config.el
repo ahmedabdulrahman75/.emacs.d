@@ -1,5 +1,6 @@
 ;; load theme
-(load-theme 'adwaita t)
+;; (load-theme 'adwaita t)
+
 ;; stop creating backup~ files
 (setq make-backup-files nil)
 
@@ -33,7 +34,7 @@
 (show-paren-mode t)
 
 ;; change the highlight color
-;; (set-face-attribute 'region nil :background "#C2D5E9")
+(set-face-attribute 'region nil :background "#C2D5E9")
 
 ;; ;; right to left config
 ;; (defun set-bidi-env ()
@@ -88,5 +89,5 @@
 ;; highlight current line
 (global-hl-line-mode 1)
 ;; (set-face-background 'hl-line "#C2D5E9")
-(set-face-background 'hl-line "#BABABA")
+;; (set-face-background 'hl-line "#BABABA")
 (set-face-foreground 'highlight nil)

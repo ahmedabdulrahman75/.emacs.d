@@ -5,8 +5,12 @@
 ;; py-autopep8
 ;; (add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
 
-;; pyvenv 
-(pyvenv-activate "~/workspace/python/venv/")
+;; pyvenv
+(use-package pyvenv
+  :ensure t
+  :config
+  (pyvenv-activate "~/workspace/python/venv/"))
+
 
 ;; set default indentation value
 ;; (add-hook 'python-mode-hook '(lambda () 
