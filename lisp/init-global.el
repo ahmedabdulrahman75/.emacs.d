@@ -31,7 +31,6 @@
   :init
   (with-eval-after-load 'winum
     (define-key winum-keymap (kbd "M-0") #'treemacs-select-window))
-  (global-set-key [f8] 'treemacs)
   :config
   (progn
     (setq treemacs-indentation  1)
