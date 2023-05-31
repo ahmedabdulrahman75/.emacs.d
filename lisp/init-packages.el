@@ -40,7 +40,6 @@
 (package-install 'dashboard)
 (package-install 'yaml-mode)
 (package-install 'ob-typescript)
-(package-install 'vscode-dark-plus-theme)
 ;; (package-install 'projectile)
 
 (provide 'init-packages)

@@ -13,8 +13,21 @@
 
 
 ;; js2-mode
-(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
-(add-to-list 'interpreter-mode-alist '("node" . js2-mode))
+(use-package js2-mode
+  :mode ("\\.js\\'" "\\.mjs\\'" "\\.cjs\\'")
+  :interpreter ("node" "nodejs")
+  :custom  (js2-indent-level 2)
+  :hook
+  (eglot-managed-mode . flymake-eslint-enable))
+
+(use-package typescript-mode
+  :mode ("\\.ts\\'")
+  :custom typescript-indent-level 2
+  :hook
+  (eglot-managed-mode . flymake-eslint-enable))
+
+;; (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+;; (add-to-list 'interpreter-mode-alist '("node" . js2-mode))
 
 ;; json-mode
 (add-to-list 'auto-mode-alist '("\\.json\\'" . json-mode))
@@ -23,17 +36,17 @@
 (add-to-list 'auto-mode-alist '("components\\/.*\\.js\\'" . rjsx-mode))
 
 ;; Typescript
-(add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-mode))
+;; (add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-mode))
 
 
 ;; indentation level
-(add-hook 'typescript-mode-hook
-          '(lambda ()
-             (setq typescript-indent-level 2)))
+;; (add-hook 'typescript-mode-hook
+;;           '(lambda ()
+;;              (setq typescript-indent-level 2)))
 
-(add-hook 'js-mode-hook
-          '(lambda ()
-             (setq js-indent-level 2)))
+;; (add-hook 'js-mode-hook
+;;           '(lambda ()
+;;              (setq js-indent-level 2)))
 
 
 ;; flymake-eslint
