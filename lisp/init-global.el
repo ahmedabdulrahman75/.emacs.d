@@ -15,8 +15,8 @@
 
 ;; company quick help
 (company-quickhelp-mode)
-;; (setq company-quickhelp-color-background "#303030")
-;; (setq company-quickhelp-color-foreground "#D0CFCC")
+(setq company-quickhelp-color-background "#303030")
+(setq company-quickhelp-color-foreground "#D0CFCC")
 
 ;; treemacs
 (use-package treemacs
@@ -106,6 +106,7 @@
      (string-prefix-p "*scratch*" name)
      (string-prefix-p "*Warnings*" name)
      (string-prefix-p "Treemacs Update Single File Process" name)
+     (string-prefix-p "*Async-native-compile-log*" name)
      ;; Is not magit buffer.
      (and (string-prefix-p "magit" name)
 	  (not (file-name-extension name)))

@@ -93,3 +93,7 @@
 
 ;; ignore case in completion
 (setq completion-ignore-case t)
+
+;; disable logging
+(custom-set-variables
+ '(warning-suppress-log-types '((comp))))
