@@ -90,3 +90,6 @@
 (global-hl-line-mode 1)
 (set-face-background 'hl-line "#BABABA")
 (set-face-foreground 'highlight nil)
+
+;; ignore case in completion
+(setq completion-ignore-case t)
