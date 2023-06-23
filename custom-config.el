@@ -27,7 +27,8 @@
 (global-auto-revert-mode 1)
 
 ;; line number in all buffers
-(global-linum-mode t)
+(global-display-line-numbers-mode t)
+(set-face-foreground 'line-number-current-line "#000000")
 ;; (add-hook 'doc-view-mode-hook (lambda() (linum-mode 0)))
 
 ;; show parenthesis matched
