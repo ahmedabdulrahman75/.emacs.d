@@ -1,3 +1,9 @@
+;; vscode dark them
+(use-package vscode-dark-plus-theme
+  :ensure t
+  :config
+  (load-theme 'vscode-dark-plus t))
+
 ;; exec-path-from-shell
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
@@ -15,8 +21,8 @@
 
 ;; company quick help
 (company-quickhelp-mode)
-;; (setq company-quickhelp-color-background "#303030")
-;; (setq company-quickhelp-color-foreground "#D0CFCC")
+(setq company-quickhelp-color-background "#303030")
+(setq company-quickhelp-color-foreground "#D0CFCC")
 
 ;; treemacs
 (use-package treemacs
@@ -28,7 +34,8 @@
   :config
   (progn
     (setq treemacs-indentation  1)
-    (treemacs-indent-guide-mode t))
+    ;; (treemacs-indent-guide-mode t)
+    )
   :bind
   (("M-0" . treemacs-select-window)))
 

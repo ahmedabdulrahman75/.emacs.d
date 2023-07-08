@@ -16,9 +16,10 @@
 (use-package js2-mode
   :mode ("\\.js\\'" "\\.mjs\\'" "\\.cjs\\'")
   :interpreter ("node" "nodejs")
-  :custom  (js2-indent-level 2)
   :hook
-  (eglot-managed-mode . flymake-eslint-enable))
+  (eglot-managed-mode . flymake-eslint-enable)
+  :config
+  (setq js-indent-level 2))
 
 (use-package typescript-mode
   :mode ("\\.ts\\'")
