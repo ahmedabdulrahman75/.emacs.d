@@ -61,9 +61,12 @@
   
   - to preserve break add ~#+OPTIONS: \n:t~ to the top of org file
 
-* TODO
+* TODO [0/5]
   - [ ] improve docs
   - [ ] add [[https://github.com/bbatsov/projectile][projectile]] package
+  - [ ] add [[https://github.com/snosov1/toc-org][toc-org]]
+  - [ ] read [[https://github.com/aadi58002/stow-dotfiles/blob/main/.config/emacs/init.org][stow-dotfiles]]
+  - [ ] add [[https://github.com/minad/org-modern][org-modern]]
     
 * References
   this is a list of helpful references
