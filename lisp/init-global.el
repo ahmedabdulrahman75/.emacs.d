@@ -168,10 +168,31 @@
 ;; dotenv mode
 (add-to-list 'auto-mode-alist '("\\.env\\..*\\'" . dotenv-mode))
 
+;; (use-package dashboard
+;;   :ensure t
+;;   :config
+;;   (dashboard-setup-startup-hook))
+;;(defun random-element-of-list (items)
+  ;; Selects a random element from a list
+  
+
 (use-package dashboard
-  :ensure t
-  :config
+  :after all-the-icons
+  :init
+  (setq dashboard-items '((recents  . 5)
+                          (projects . 5)
+                          (agenda . 5)))
+  (setq dashboard-set-heading-icons t
+        dashboard-projects-backend 'project-el
+        dashboard-startup-banner 'official
+        dashboard-banner-logo-title ""
+        dashboard-image-banner-max-height 500
+        dashboard-set-footer nil
+        dashboard-set-file-icons t
+        dashboard-set-init-info t
+        initial-buffer-choice (lambda () (get-buffer-create "*dashboard*")))
   (dashboard-setup-startup-hook))
+(add-hook 'server-after-make-frame-hook 'dashboard-refresh-buffer)
 
 (provide 'init-global)
 ;;; init-global.el ends here
