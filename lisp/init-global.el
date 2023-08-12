@@ -1,9 +1,3 @@
-;; vscode dark them
-(use-package vscode-dark-plus-theme
-  :ensure t
-  :config
-  (load-theme 'vscode-dark-plus t))
-
 ;; exec-path-from-shell
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
@@ -21,8 +15,8 @@
 
 ;; company quick help
 (company-quickhelp-mode)
-(setq company-quickhelp-color-background "#303030")
-(setq company-quickhelp-color-foreground "#D0CFCC")
+;; (setq company-quickhelp-color-background "#303030")
+;; (setq company-quickhelp-color-foreground "#D0CFCC")
 
 ;; treemacs
 (use-package treemacs
@@ -168,14 +162,7 @@
 ;; dotenv mode
 (add-to-list 'auto-mode-alist '("\\.env\\..*\\'" . dotenv-mode))
 
-;; (use-package dashboard
-;;   :ensure t
-;;   :config
-;;   (dashboard-setup-startup-hook))
-;;(defun random-element-of-list (items)
-  ;; Selects a random element from a list
-  
-
+;; dashboard
 (use-package dashboard
   :after all-the-icons
   :init
