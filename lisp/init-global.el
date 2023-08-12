@@ -189,10 +189,7 @@
         dashboard-image-banner-max-height 500
         dashboard-set-footer nil
         dashboard-set-file-icons t
-        dashboard-set-init-info t
-        initial-buffer-choice (lambda () (get-buffer-create "*dashboard*")))
+        dashboard-set-init-info t)
   (dashboard-setup-startup-hook))
-(add-hook 'server-after-make-frame-hook 'dashboard-refresh-buffer)
-
 (provide 'init-global)
 ;;; init-global.el ends here
