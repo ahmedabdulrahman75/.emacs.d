@@ -72,7 +72,10 @@
   (require 'all-the-icons))
 
 ;; doom-modeline
-(doom-modeline-mode 1)
+(use-package doom-modeline
+  :config
+  (doom-modeline-mode 1))
+
 
 ;;centaur tabs
 (centaur-tabs-mode t)
@@ -178,5 +181,14 @@
         dashboard-set-file-icons t
         dashboard-set-init-info t)
   (dashboard-setup-startup-hook))
+
+;; aggressive-indent
+(use-package aggressive-indent
+  :config
+  (global-aggressive-indent-mode 1))
+
+
 (provide 'init-global)
 ;;; init-global.el ends here
+
+

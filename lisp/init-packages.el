@@ -43,6 +43,7 @@
 (package-install 'org-cliplink)
 (package-install 'toc-org)
 (package-install 'org-modern)
+(package-install 'aggressive-indent)
 ;; (package-install 'projectile)
 
 (provide 'init-packages)
