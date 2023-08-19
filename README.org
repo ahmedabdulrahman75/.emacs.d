@@ -21,7 +21,7 @@
   get the docs and autocomplete while using emacs.
 
   #+BEGIN_SRC shell
-  pip install 'python-language-server[autopep8]' virtualenvwrapper
+  pip install 'python-language-server[autopep8]' virtualenvwrapper jedi-language-server
   #+END_SRC
 
 * clone .emacs repo

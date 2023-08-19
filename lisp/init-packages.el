@@ -44,6 +44,7 @@
 (package-install 'toc-org)
 (package-install 'org-modern)
 (package-install 'aggressive-indent)
+(package-install 'vscode-dark-plus-theme)
 ;; (package-install 'projectile)
 
 (provide 'init-packages)
