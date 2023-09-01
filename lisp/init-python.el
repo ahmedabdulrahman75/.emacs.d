@@ -1,9 +1,7 @@
-;; requirements
-(package-install 'py-autopep8)
-(package-install 'pyvenv)
-
 ;; py-autopep8
 ;; (add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
+
+(require 'python-mode)
 
 ;; pyvenv
 (use-package pyvenv
