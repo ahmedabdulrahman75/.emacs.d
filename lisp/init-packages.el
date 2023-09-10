@@ -47,6 +47,7 @@
 (package-install 'vscode-dark-plus-theme)
 (package-install 'python-mode)
 (package-install 'pyvenv)
+(package-install 'py-autopep8)
 ;; (package-install 'projectile)
 
 (provide 'init-packages)
