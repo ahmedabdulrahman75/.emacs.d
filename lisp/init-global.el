@@ -20,9 +20,13 @@
 (setq company-idle-delay 0.7)
 
 ;; company quick help
-(company-quickhelp-mode)
-(setq company-quickhelp-color-background "#303030")
-(setq company-quickhelp-color-foreground "#D0CFCC")
+(use-package company-quickhelp
+  :ensure t
+  :config
+  (company-quickhelp-mode 1)
+  (setq company-quickhelp-color-background "#303030")
+  (setq company-quickhelp-color-foreground "#D0CFCC")
+  )
 
 ;; treemacs
 (use-package treemacs
@@ -192,6 +196,14 @@
 (use-package aggressive-indent
   :config
   (global-aggressive-indent-mode 1))
+
+;; eldoc-box
+(use-package eldoc-box
+  :init
+  (add-hook 'eglot-managed-mode-hook #'eldoc-box-hover-at-point-mode t)
+  :config
+  (setq x-gtk-resize-child-frames 'resize-mode))
+
 
 (provide 'init-global)
 ;;; init-global.el ends here
