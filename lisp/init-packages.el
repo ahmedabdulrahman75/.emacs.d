@@ -48,6 +48,7 @@
 (package-install 'python-mode)
 (package-install 'pyvenv)
 (package-install 'py-autopep8)
+(package-install 'eldoc-box)
 ;; (package-install 'projectile)
 
 (provide 'init-packages)

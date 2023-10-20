@@ -198,11 +198,11 @@
   (global-aggressive-indent-mode 1))
 
 ;; eldoc-box
-(use-package eldoc-box
-  :init
-  (add-hook 'eglot-managed-mode-hook #'eldoc-box-hover-at-point-mode t)
-  :config
-  (setq x-gtk-resize-child-frames 'resize-mode))
+;; (use-package eldoc-box
+;;   :init
+;;   (add-hook 'eglot-managed-mode-hook #'eldoc-box-hover-at-point-mode t)
+;;   :config
+;;   (setq x-gtk-resize-child-frames 'resize-mode))
 
 
 (provide 'init-global)
