@@ -192,10 +192,10 @@
         dashboard-set-init-info t)
   (dashboard-setup-startup-hook))
 
-;; aggressive-indent
-(use-package aggressive-indent
-  :config
-  (global-aggressive-indent-mode 1))
+;; ;; aggressive-indent
+;; (use-package aggressive-indent
+;;   :config
+;;   (global-aggressive-indent-mode 1))
 
 ;; eldoc-box
 ;; (use-package eldoc-box
