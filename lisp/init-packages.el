@@ -49,6 +49,7 @@
 (package-install 'pyvenv)
 (package-install 'py-autopep8)
 (package-install 'eldoc-box)
+(package-install 'eglot-java)
 ;; (package-install 'projectile)
 
 (provide 'init-packages)

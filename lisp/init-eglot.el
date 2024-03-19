@@ -7,11 +7,12 @@
   :ensure t
   :config
   (setq eglot-confirm-server-initiated-edits nil)
-  
+
   (add-to-list 'eglot-server-programs
                '(python-mode . ("jedi-language-server")))
-  
-  (add-hook 'prog-mode-hook 'eglot-ensure))
+
+  (add-hook 'prog-mode-hook 'eglot-ensure)
+  :hook (eglot--managed-mode . (lambda () (company-mode t))))
 
 (provide 'init-eglot)
 ;;; init-eglot.el ends here
