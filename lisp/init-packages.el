@@ -35,7 +35,6 @@
 (package-install 'company-restclient)
 (package-install 'devdocs)
 (package-install 'treemacs-magit)
-(package-install 'eglot)
 (package-install 'consult-eglot)
 (package-install 'dashboard)
 (package-install 'yaml-mode)

@@ -100,3 +100,9 @@
 (setq mouse-wheel-scroll-amount '(0.07))
 (setq mouse-wheel-progressive-speed nil)
 (setq ring-bell-function 'ignore)
+
+;; default encode
+(set-language-environment "UTF-8")
+
+(provide 'custom-config)
+;;; custom-config.el ends here
