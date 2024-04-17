@@ -51,6 +51,7 @@
 (package-install 'eglot-java)
 (package-install 'terraform-mode)
 (package-install 'company-terraform)
+(package-install 'csv-mode)
 ;; (package-install 'projectile)
 
 (provide 'init-packages)
