@@ -11,17 +11,9 @@
   #+END_SRC
 
 * pip packages required
-  create virtual environment at =~/workspace/python/venv/= then activate 
-  the created virtual environment
-
-  ~source ~/workspace/python/venv/bin/activate~
-  after that run the following command
-
-  *hint* install the packages that you use into this venv so you can 
-  get the docs and autocomplete while using emacs.
 
   #+BEGIN_SRC shell
-  pip install yapf virtualenvwrapper jedi-language-server
+  pip install "python-lsp-server[all]" pylsp-mypy
   #+END_SRC
 
 * clone .emacs repo
@@ -65,7 +57,6 @@
   - [ ] improve docs
   - [ ] add [[https://github.com/bbatsov/projectile][projectile]] package
   - [ ] add [[https://github.com/snosov1/toc-org][toc-org]]
-  - [ ] read [[https://github.com/aadi58002/stow-dotfiles/blob/main/.config/emacs/init.org][stow-dotfiles]]
   - [ ] add [[https://github.com/minad/org-modern][org-modern]]
     
 * References
