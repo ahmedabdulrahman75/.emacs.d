@@ -35,3 +35,6 @@
 ;; Volar
 (add-to-list 'eglot-server-programs
              `(vue-mode . ("vue-language-server" "--stdio" :initializationOptions ,(vue-eglot-init-options))))
+
+(provide 'init-vue)
+;;; init-vue.el ends here

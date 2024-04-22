@@ -52,6 +52,7 @@
 (package-install 'terraform-mode)
 (package-install 'company-terraform)
 (package-install 'csv-mode)
+(package-install 'vue-mode)
 ;; (package-install 'projectile)
 
 (provide 'init-packages)
