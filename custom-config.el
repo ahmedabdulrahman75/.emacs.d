@@ -74,6 +74,7 @@
 
 ;; enable column indicator in prog-mode
 (add-hook 'prog-mode-hook #'display-fill-column-indicator-mode)
+(setq-default fill-column 79)
 
 ;; flymake
 (add-hook 'prog-mode-hook 'flymake-mode)
