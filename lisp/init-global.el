@@ -1,6 +1,3 @@
-;; default font
-(set-frame-font "Cascadia Code 11" nil t)
-
 ;; vscode dark them
 (use-package vscode-dark-plus-theme
   :ensure t

@@ -105,5 +105,8 @@
 ;; default encode
 (set-language-environment "UTF-8")
 
+;; default font
+(set-face-attribute 'default nil :family "Monospace Regular" :height 110)
+
 (provide 'custom-config)
 ;;; custom-config.el ends here
