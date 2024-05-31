@@ -1,0 +1,9 @@
+((:container
+  ((elisp org-element--headline-cache)
+   (elisp org-element--cache))
+  :persist-file "89/f81774-14c1-4ae4-9bf7-bc0da99fcb7b" :associated
+  (:hash "c7d69528af078452265ecb1ab44ed19f" :file "c:/Users/admin2/3d_session.org" :inode 2814749767240249)
+  :expiry 30 :last-access 1714562910.444802 :last-access-hr "2024-05-01T14:28:30+0300")
+ (:container
+  ((index "3.1"))
+  :persist-file "2f/295c00-340b-4078-91a1-c66124d80deb" :associated nil :expiry never :last-access 1717143833.166414 :last-access-hr "2024-05-31T11:23:53+0300"))
