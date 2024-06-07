@@ -3,7 +3,7 @@
   :ensure t
   :after eglot
   :init
-  (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+  (add-to-list 'auto-mode-alist '("\\.ya?ml\\'" . yaml-mode))
   :config
    (add-hook 'yaml-mode-hook 'eglot-ensure))
 
