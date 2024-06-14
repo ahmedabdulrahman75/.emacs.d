@@ -7,7 +7,7 @@
 * npm packages required
 
   #+BEGIN_SRC shell
-  npm -g install prettier eslint vscode-langservers-extracted typescript-language-server typescript @angular/language-server yaml-language-server
+  npm -g install prettier eslint vscode-langservers-extracted typescript-language-server typescript @angular/language-server yaml-language-server dockerfile-language-server-nodejs
   #+END_SRC
 
 * pip packages required

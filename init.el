@@ -26,6 +26,7 @@
 (load "init-vue")
 (load "init-terraform")
 (load "init-csv")
+(load "init-docker")
 ;; (load "latex-lisp")
 ;;--------------------------------------------------------------------------
 ;; set custom variables in custom.el but never loaded
