@@ -88,7 +88,6 @@
 
 
 ;;centaur tabs
-(centaur-tabs-mode t)
 (global-set-key (kbd "C-{")  'centaur-tabs-backward)
 (global-set-key (kbd "C-}") 'centaur-tabs-forward)
 (setq centaur-tabs-style "bar")
@@ -96,6 +95,7 @@
 (setq x-underline-at-descent-line t)
 (setq centaur-tabs-set-icons t)
 (setq centaur-tabs-show-navigation-buttons t)
+(centaur-tabs-mode t)
 (defun centaur-tabs-hide-tab (x)
   "Do no to show buffer X in tabs."
   (let ((name (format "%s" x)))
