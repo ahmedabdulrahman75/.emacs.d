@@ -1,6 +1,7 @@
 (use-package company-terraform
   :ensure t
   :after company-mode
+  :mode ("\\.tf\\'")
   :init
   (company-terraform-init)
   )

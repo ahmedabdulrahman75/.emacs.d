@@ -15,10 +15,6 @@
   #+BEGIN_SRC shell
   pip install "python-lsp-server[all]" pylsp-mypy
   #+END_SRC
-
-* Font required
-
- install [[https://github.com/microsoft/cascadia-code][Cascadia Code]]
  
 * clone .emacs repo
 

@@ -108,5 +108,8 @@
 ;; default font
 (set-face-attribute 'default nil :family "Cascadia Code" :height 110)
 
+;; eldoc help at point
+(global-set-key (kbd "C-c h") 'eldoc-box-help-at-point)
+
 (provide 'custom-config)
 ;;; custom-config.el ends here
