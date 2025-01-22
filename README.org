@@ -54,6 +54,8 @@
   
   - to preserve break add ~#+OPTIONS: \n:t~ to the top of org file
 
+  - use *custom.el* to set environment specific customization that you don't want to be tracked by GIT
+
 * TODO [0/5]
   - [ ] improve docs
   - [ ] add [[https://github.com/bbatsov/projectile][projectile]] package

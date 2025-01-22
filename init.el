@@ -29,5 +29,6 @@
 (load "init-docker")
 ;; (load "latex-lisp")
 ;;--------------------------------------------------------------------------
-;; set custom variables in custom.el but never loaded
+;; set environment specific customization in custom.el to not be tracked by git
 (setq custom-file (concat user-emacs-directory "/custom.el"))
+(load "~/.emacs.d/custom")
