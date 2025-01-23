@@ -86,45 +86,33 @@
   :config
   (doom-modeline-mode 1))
 
-
 ;;centaur tabs
-(global-set-key (kbd "C-{")  'centaur-tabs-backward)
-(global-set-key (kbd "C-}") 'centaur-tabs-forward)
-(setq centaur-tabs-style "bar")
-(setq centaur-tabs-set-bar 'under)
-(setq x-underline-at-descent-line t)
-(setq centaur-tabs-set-icons t)
-(setq centaur-tabs-show-navigation-buttons t)
-(centaur-tabs-mode t)
-(defun centaur-tabs-hide-tab (x)
-  "Do no to show buffer X in tabs."
-  (let ((name (format "%s" x)))
-    (or
-     ;; Current window is not dedicated window.
-     (window-dedicated-p (selected-window))
-
-     ;; Buffer name not match below blacklist.
-     (string-prefix-p "*epc" name)
-     (string-prefix-p "*EGLOT" name)
-     (string-prefix-p "*Compile-Log*" name)
-     (string-prefix-p "*company" name)
-     (string-prefix-p "*tramp" name)
-     (string-prefix-p "*Flymake" name)
-     (string-prefix-p "*help" name)
-     (string-prefix-p "*straight" name)
-     (string-prefix-p " *temp" name)
-     (string-prefix-p "*Help" name)
-     (string-prefix-p "*mybuf" name)
-     (string-prefix-p "*Messages" name)
-     (string-prefix-p "*format-all-errors*" name)
-     (string-prefix-p "*scratch*" name)
-     (string-prefix-p "*Warnings*" name)
-     (string-prefix-p "Treemacs Update Single File Process" name)
-     (string-prefix-p "*Async-native-compile-log*" name)
-     ;; Is not magit buffer.
-     (and (string-prefix-p "magit" name)
-	  (not (file-name-extension name)))
-     )))
+(use-package centaur-tabs
+  :demand t
+  :defines centaur-tabs-excluded-prefixes
+  :commands (centaur-tabs-mode centaur-tabs-headline-match centaur-tabs-group-by-projectile-project)
+  :init
+  (setq centaur-tabs-style                    "bar"
+        centaur-tabs-set-bar                  'under
+        centaur-tabs-height                   32
+        centaur-tabs-set-icons                t
+        centaur-tabs-show-new-tab-button      t
+        centaur-tabs-set-modified-marker      t
+        centaur-tabs-show-navigation-buttons  t
+        centaur-tabs-show-count               t
+        x-underline-at-descent-line           t)
+  :config
+  (centaur-tabs-mode)
+  (centaur-tabs-headline-match)
+  (centaur-tabs-group-by-projectile-project)
+  (global-set-key (kbd "C-{")  'centaur-tabs-backward)
+  (global-set-key (kbd "C-}") 'centaur-tabs-forward)
+  (dolist
+      (excluded-prefixes
+       '( " *" "*Org Agenda*" "*Org Note*" "*Org Select*" "*Capture*" "*Calendar*" "*Flymake diagnostics" "*Kill Ring*"
+          "*flycheck-posframe-buffer*" "*Shell Command Output*" "*dashboard*" "*Directory*" "*vterm*" "*compilation*"
+          "magit:" "magit-" "*vc*"))
+    (add-to-list 'centaur-tabs-excluded-prefixes excluded-prefixes)))
 
 ;; multiple-cursors
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
