@@ -180,6 +180,12 @@
         dashboard-set-init-info t)
   (dashboard-setup-startup-hook))
 
+;; blamer
+(use-package blamer
+  :ensure t
+  :bind (("C-c i" . blamer-show-posframe-commit-info))
+  )
+
 ;; ;; aggressive-indent
 ;; (use-package aggressive-indent
 ;;   :config

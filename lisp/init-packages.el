@@ -54,6 +54,7 @@
 (package-install 'csv-mode)
 (package-install 'vue-mode)
 (package-install 'dockerfile-mode)
+(package-install 'blamer)
 ;; (package-install 'projectile)
 
 (provide 'init-packages)
