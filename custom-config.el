@@ -26,13 +26,13 @@
 ;; line number in all buffers
 (global-display-line-numbers-mode t)
 (set-face-foreground 'line-number-current-line "#ffffff")
-;; (add-hook 'doc-view-mode-hook (lambda() (linum-mode 0)))
+(add-hook 'doc-view-mode-hook (lambda() (linum-mode 0)))
 
 ;; show parenthesis matched
 (show-paren-mode t)
 
 ;; change the highlight color
-;; (set-face-attribute 'region nil :background "#C2D5E9")
+(set-face-attribute 'region nil :background "#C2D5E9")
 
 ;; ;; right to left config
 ;; (defun set-bidi-env ()
@@ -87,8 +87,8 @@
 
 ;; highlight current line
 (global-hl-line-mode 1)
-;; (set-face-background 'hl-line "#BABABA")
-;; (set-face-foreground 'highlight nil)
+(set-face-background 'hl-line "#BABABA")
+(set-face-foreground 'highlight nil)
 
 ;; ignore case in completion
 (setq completion-ignore-case t)
@@ -104,9 +104,6 @@
 
 ;; default encode
 (set-language-environment "UTF-8")
-
-;; default font
-(set-face-attribute 'default nil :family "Cascadia Code" :height 110)
 
 ;; eldoc help at point
 (global-set-key (kbd "C-c h") 'eldoc-box-help-at-point)

@@ -1,9 +1,3 @@
-;; vscode dark them
-(use-package vscode-dark-plus-theme
-  :ensure t
-  :config
-  (load-theme 'vscode-dark-plus t))
-
 ;; exec-path-from-shell
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
@@ -24,8 +18,8 @@
   :ensure t
   :config
   (company-quickhelp-mode 1)
-  (setq company-quickhelp-color-background "#303030")
-  (setq company-quickhelp-color-foreground "#D0CFCC")
+  ;; (setq company-quickhelp-color-background "#303030")
+  ;; (setq company-quickhelp-color-foreground "#D0CFCC")
   )
 
 ;; treemacs
@@ -103,6 +97,12 @@
         x-underline-at-descent-line           t)
   :config
   (centaur-tabs-mode)
+  (custom-set-faces
+   '(centaur-tabs-default ((t (:background "white" :foreground "black"))))
+   '(centaur-tabs-selected ((t (:background "white" :foreground "black" :box (:line-width 2 :color "white")))))
+   '(centaur-tabs-unselected ((t (:background "white" :foreground "gray" :box (:line-width 2 :color "white")))))
+   '(centaur-tabs-selected-modified ((t (:background "white" :foreground "blue" :box (:line-width 2 :color "white")))))
+   '(centaur-tabs-unselected-modified ((t (:background "white" :foreground "blue" :box (:line-width 2 :color "white"))))))
   (centaur-tabs-headline-match)
   (centaur-tabs-group-by-projectile-project)
   (global-set-key (kbd "C-{")  'centaur-tabs-backward)
@@ -197,7 +197,6 @@
 ;;   (add-hook 'eglot-managed-mode-hook #'eldoc-box-hover-at-point-mode t)
 ;;   :config
 ;;   (setq x-gtk-resize-child-frames 'resize-mode))
-
 
 (provide 'init-global)
 ;;; init-global.el ends here
