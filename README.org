@@ -47,7 +47,8 @@
   - [f4] fromat-all-buffer
   - "C-'" for company complete
   - "C-S-i" formate buffer
-  - "C-c h" eldoc-box-help-at-point
+  - "C-c h" eldoc-box-help-at-point 
+  - "C-c i" blamer-show-posframe-commit-info
     
 * Notes
   - prettier is used by *[[https://github.com/lassik/emacs-format-all-the-code][emacs-format-all-the-code]]*
