@@ -55,6 +55,7 @@
 (package-install 'vue-mode)
 (package-install 'dockerfile-mode)
 (package-install 'blamer)
+(package-install 'copilot)
 ;; (package-install 'projectile)
 
 (provide 'init-packages)
