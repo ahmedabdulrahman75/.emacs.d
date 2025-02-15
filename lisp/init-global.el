@@ -113,6 +113,8 @@
   (centaur-tabs-group-by-projectile-project)
   (global-set-key (kbd "C-{")  'centaur-tabs-backward)
   (global-set-key (kbd "C-}") 'centaur-tabs-forward)
+  (global-set-key (kbd "C-<left>") 'centaur-tabs-move-current-tab-to-left)
+  (global-set-key (kbd "C-<right>") 'centaur-tabs-move-current-tab-to-right)
   (dolist
       (excluded-prefixes
        '( " *" "*Org Agenda*" "*Org Note*" "*Org Select*" "*Capture*" "*Calendar*" "*Flymake diagnostics" "*Kill Ring*"
