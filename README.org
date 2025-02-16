@@ -7,7 +7,7 @@
 * npm packages required
 
   #+BEGIN_SRC shell
-  npm -g install prettier eslint vscode-langservers-extracted typescript-language-server typescript @angular/language-server yaml-language-server dockerfile-language-server-nodejs
+  npm -g install prettier eslint vscode-langservers-extracted typescript-language-server typescript @angular/language-server yaml-language-server dockerfile-language-server-nodejs vue-language-server
   #+END_SRC
 
 * pip packages required
@@ -51,6 +51,8 @@
   - "C-S-i" formate buffer
   - "C-c h" eldoc-box-help-at-point 
   - "C-c i" blamer-show-posframe-commit-info
+  - "C-<left>" centaur-tabs-move-current-tab-to-left
+  - "C-<right>" centaur-tabs-move-current-tab-to-right
     
 * Notes
   - prettier is used by *[[https://github.com/lassik/emacs-format-all-the-code][emacs-format-all-the-code]]*
