@@ -1,0 +1,3 @@
+[submodule "themes/vscode-dark-plus-emacs-theme"]
+	path = themes/vscode-dark-plus-emacs-theme
+	url = https://github.com/ahmedabdulrahman75/vscode-dark-plus-emacs-theme.git
