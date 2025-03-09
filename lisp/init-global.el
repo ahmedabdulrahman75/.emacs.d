@@ -17,10 +17,7 @@
 (use-package company-quickhelp
   :ensure t
   :config
-  (company-quickhelp-mode 1)
-  (setq company-quickhelp-color-background "#303030")
-  (setq company-quickhelp-color-foreground "#D0CFCC")
-  )
+  (company-quickhelp-mode 1))
 
 ;; treemacs
 (use-package treemacs
