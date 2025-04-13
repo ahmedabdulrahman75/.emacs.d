@@ -197,5 +197,18 @@
 ;;   :config
 ;;   (setq x-gtk-resize-child-frames 'resize-mode))
 
+
+;; git gutter
+(use-package git-gutter
+  :hook (prog-mode . git-gutter-mode)
+  :config
+  (setq git-gutter:update-interval 0.02))
+
+(use-package git-gutter-fringe
+  :config
+  (define-fringe-bitmap 'git-gutter-fr:added [255] nil nil '(center repeated))
+  (define-fringe-bitmap 'git-gutter-fr:modified [255] nil nil '(center repeated))
+  (define-fringe-bitmap 'git-gutter-fr:deleted [255 255 255 255] nil nil 'bottom))
+
 (provide 'init-global)
 ;;; init-global.el ends here
