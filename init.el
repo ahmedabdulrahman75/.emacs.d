@@ -27,7 +27,6 @@
 (load "init-terraform")
 (load "init-csv")
 (load "init-docker")
-(load "init-copilot")
 ;; (load "latex-lisp")
 ;;--------------------------------------------------------------------------
 ;; set environment specific customization in custom.el to not be tracked by git

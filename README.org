@@ -33,8 +33,6 @@
   #+BEGIN_SRC shell
   fc-cache -f -v
   #+END_SRC
-
-  for copilot package follow these [[https://github.com/copilot-emacs/copilot.el][steps]]
   
 * Keyboard shortcuts
   - "M-0" toggle treemacs and switch between treemacs and open buffers

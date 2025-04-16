@@ -110,7 +110,7 @@
       (excluded-prefixes
        '( " *" "*Org Agenda*" "*Org Note*" "*Org Select*" "*Capture*" "*Calendar*" "*Flymake diagnostics" "*Kill Ring*"
           "*flycheck-posframe-buffer*" "*Shell Command Output*" "*dashboard*" "*Directory*" "*vterm*" "*compilation*"
-          "magit:" "magit-" "*vc*"))
+          "magit:" "magit-" "*vc*" "*"))
     (add-to-list 'centaur-tabs-excluded-prefixes excluded-prefixes)))
 
 ;; multiple-cursors
@@ -209,6 +209,9 @@
   (define-fringe-bitmap 'git-gutter-fr:added [255] nil nil '(center repeated))
   (define-fringe-bitmap 'git-gutter-fr:modified [255] nil nil '(center repeated))
   (define-fringe-bitmap 'git-gutter-fr:deleted [255 255 255 255] nil nil 'bottom))
+
+
+;; we recommend using use-package to organize your init.el
 
 (provide 'init-global)
 ;;; init-global.el ends here

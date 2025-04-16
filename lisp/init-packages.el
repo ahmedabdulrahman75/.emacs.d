@@ -55,7 +55,6 @@
 (package-install 'vue-mode)
 (package-install 'dockerfile-mode)
 (package-install 'blamer)
-(package-install 'copilot)
 (package-install 'doom-themes)
 (package-install 'git-gutter)
 (package-install 'git-gutter-fringe)
