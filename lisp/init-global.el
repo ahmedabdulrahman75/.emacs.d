@@ -222,7 +222,12 @@
   (define-fringe-bitmap 'git-gutter-fr:deleted [255 255 255 255] nil nil 'bottom))
 
 ;; minimap
-(setq minimap-window-location 'right)
+(use-package minimap
+  :ensure t
+  :config
+  (setq minimap-window-location 'right)
+  (global-set-key (kbd "<f9>") #'minimap-mode))
+
 
 (provide 'init-global)
 ;;; init-global.el ends here

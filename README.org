@@ -44,13 +44,13 @@
   - "C-<" & "C->" mark next and preview like words
   - "C-c C-<" mark all like words
   - "C-c C-v" preview html file in browser
-  - [f4] fromat-all-buffer
   - "C-'" for company complete
   - "C-S-i" formate buffer
   - "C-c h" eldoc-box-help-at-point 
   - "C-c i" blamer-show-posframe-commit-info
   - "C-<left>" centaur-tabs-move-current-tab-to-left
   - "C-<right>" centaur-tabs-move-current-tab-to-right
+  - [f9] minimap
     
 * Notes
   - prettier is used by *[[https://github.com/lassik/emacs-format-all-the-code][emacs-format-all-the-code]]*
