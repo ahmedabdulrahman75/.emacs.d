@@ -1,3 +1,9 @@
+;; vscode dark them
+(use-package vscode-dark-plus-theme
+  :ensure t
+  :config
+  (load-theme 'vscode-dark-plus t))
+
 ;; exec-path-from-shell
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
@@ -6,18 +12,23 @@
 (which-key-mode)
 
 ;; company mode
-(add-hook 'after-init-hook 'global-company-mode)
-(global-set-key (kbd "C-'") 'company-complete) ; show completion suggestions by using tab key
-;; some improvement to company mode
-(setq company-minimum-prefix-length 1)
-(setq company-dabbrev-downcase 0)
-(setq company-idle-delay 0.7)
+(use-package company
+  :ensure t
+  :hook (after-init . global-company-mode)
+  :bind ("C-'" . company-complete)
+  :config
+  (setq company-minimum-prefix-length 1
+        company-idle-delay 0.7
+        company-dabbrev-downcase nil))
+
 
 ;; company quick help
 (use-package company-quickhelp
   :ensure t
   :config
-  (company-quickhelp-mode 1))
+  (company-quickhelp-mode 1)
+  (setq company-quickhelp-color-background "#303030")
+  (setq company-quickhelp-color-foreground "#D0CFCC"))
 
 ;; treemacs
 (use-package treemacs
