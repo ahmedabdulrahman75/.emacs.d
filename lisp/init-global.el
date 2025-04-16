@@ -221,8 +221,8 @@
   (define-fringe-bitmap 'git-gutter-fr:modified [255] nil nil '(center repeated))
   (define-fringe-bitmap 'git-gutter-fr:deleted [255 255 255 255] nil nil 'bottom))
 
-
-;; we recommend using use-package to organize your init.el
+;; minimap
+(setq minimap-window-location 'right)
 
 (provide 'init-global)
 ;;; init-global.el ends here

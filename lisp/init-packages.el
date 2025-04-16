@@ -58,6 +58,7 @@
 (package-install 'doom-themes)
 (package-install 'git-gutter)
 (package-install 'git-gutter-fringe)
+(package-install 'minimap)
 ;; (package-install 'projectile)
 
 (provide 'init-packages)
