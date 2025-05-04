@@ -1,9 +1,3 @@
-;; vscode dark them
-(use-package vscode-dark-plus-theme
-  :ensure t
-  :config
-  (load-theme 'vscode-dark-plus t))
-
 ;; exec-path-from-shell
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
@@ -11,24 +5,31 @@
 ;; which key mode
 (which-key-mode)
 
-;; company mode
-(use-package company
+;; Enable Corfu completion UI
+(use-package corfu
   :ensure t
-  :hook (after-init . global-company-mode)
-  :bind ("C-'" . company-complete)
+  :custom
+  (corfu-auto t)
+  (corfu-auto-delay 0.2)
+  (corfu-auto-prefix 1)
+  :init
+  (global-corfu-mode)
+  (corfu-history-mode)
+  (corfu-popupinfo-mode)
   :config
-  (setq company-minimum-prefix-length 1
-        company-idle-delay 0.7
-        company-dabbrev-downcase nil))
+  (add-to-list 'corfu-margin-formatters #'nerd-icons-corfu-formatter)
+  (define-key corfu-map (kbd "M-n") #'corfu-popupinfo-scroll-up)
+  (define-key corfu-map (kbd "M-p") #'corfu-popupinfo-scroll-down))
 
 
-;; company quick help
-(use-package company-quickhelp
-  :ensure t
-  :config
-  (company-quickhelp-mode 1)
-  (setq company-quickhelp-color-background "#303030")
-  (setq company-quickhelp-color-foreground "#D0CFCC"))
+;; cape mode
+(use-package cape
+  :bind ("C-<tab>" . completion-at-point)
+  :init
+  (add-hook 'completion-at-point-functions #'cape-dabbrev)
+  (add-hook 'completion-at-point-functions #'cape-file)
+  (add-hook 'completion-at-point-functions #'cape-elisp-block)
+  )
 
 ;; treemacs
 (use-package treemacs
@@ -56,21 +57,6 @@
 ;; Drag Stuff
 (drag-stuff-global-mode 1)
 (drag-stuff-define-keys)
-
-
-;; enable yasnippet with company mode
-(defun autocomplete-show-snippets ()
-  "Show snippets in autocomplete popup."
-  (let ((backend (car company-backends)))
-    (unless (listp backend)
-      (setcar company-backends `(,backend :with company-yasnippet company-files)))))
-;; See http://www.gnu.org/software/emacs/manual/html_node/emacs/Hooks.html
-;; for what this line means
-(add-hook 'after-change-major-mode-hook 'autocomplete-show-snippets)
-
-
-;; company restclient
-(add-to-list 'company-backends 'company-restclient)
 
 ;; indent guide
 (indent-guide-global-mode)
